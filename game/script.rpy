@@ -47,9 +47,10 @@ label commonroute_1:
     # These display lines of dialogue.
 
 label commmonroute_2:
+    # Chapter 2 begins here.
 
 label commonroute_3:
-
+    # Chapter 3 begins here.
 
 
     # This ends the game.
