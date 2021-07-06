@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 74: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "I'm Fine with this life, I've seen the future and i'll  be fine."
+                                                                      ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Tue Jul 06 22:51:11 2021
