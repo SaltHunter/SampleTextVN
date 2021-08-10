@@ -1,4 +1,5 @@
 ﻿# The script of the game goes in this file.
+# TODO, Character Expressions Notes Ect do not forget!
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.\
@@ -8,7 +9,7 @@
 define r = Character("Reimu")
 define ry = Character("Ryouhei")
 define t = Character("Tatsuki")
-define o = Character("Ozaki Kei")
+define o = Character("Kei")
 define n = Character ("Naotora")
 define th = Character ("Tatsuhiro")
 define ih = Character ("Isurugi Hirotsu")
@@ -19,6 +20,7 @@ define yak1 = Character("Yakuza Member #1")
 define cl = Character("Caller Voice #1")
 define to = Character ("Train Operator")
 define w = Character("Woman")
+define cr = Character("Crowd")
 
 # Definition of Flags go here.
 
@@ -28,16 +30,19 @@ $ gift = ""
 # The game starts here.
 
 label start:
+    scene black 
+    with fade
     $ reimi_pts = 0
     # Intro Narration 
     # TODO format it...
-    #The world ended 20 years ago.
-#A great disaster known as the great rising razed the cities of the world. Now most of the population live in island cities.
-#One of these cities is Shinjuku, a shining beacon of decadence amidst the endless seas.
-#Mankind also discovered the full extent of their powers, the people of Shinjuku call it "Talent". An extension of the physical which allows people to go beyond their physical limits.
-#With no government, the cities came under control of criminal organizations.
-#And in the center of it all, a Freelance Fortune Teller. A man who can show the future to these crime lords.
-#This is the story of Sakaguchi Ryouhei.
+    "The world ended 20 years ago."
+    "A great disaster known as the great rising razed the cities of the world. Now most of the population live in island cities."
+    "One of these cities is Shinjuku, a shining beacon of decadence amidst the endless seas."
+    "Mankind also discovered the full extent of their powers, the people of Shinjuku call it Talent. An extension of the physical which allows people to go beyond their physical limits."
+    "With no government, the cities came under control of criminal organizations."
+    "And in the center of it all, a Freelance Fortune Teller. A man who can show the future to these crime lords."
+    "This is the story of Sakaguchi Ryouhei."
+jump day_1
 
 label day_1:
     # Chapter 1 begins here.
@@ -50,130 +55,130 @@ label day_1:
     show ryouhei_happy
     with fade
     
-        ry "Mnghh..."
+    ry "Mnghh..."
 
-        "My phone sprang to life, its familiar buzz pulling me out of my sleep."
+    "My phone sprang to life, its familiar buzz pulling me out of my sleep."
 
-        ry "God, give me 5 more minutes."
+    ry "God, give me 5 more minutes."
 
-        "The phone continued to ring, with not much way to avoid it, I quickly picked it up, despite my half-asleep state."
+    "The phone continued to ring, with not much way to avoid it, I quickly picked it up, despite my half-asleep state."
 
-        ry "Good Morning, this is Sakaguchi Ryouhei, sorry I just woke up . . .how can I help you today?"
+    ry "Good Morning, this is Sakaguchi Ryouhei, sorry I just woke up . . .how can I help you today?"
         
-        cl "Good morning Mr. Sakaguchi, my name is Yamada Tatsuhiro representing Madame Ozaki."
+    cl "Good morning Mr. Sakaguchi, my name is Yamada Tatsuhiro representing Madame Ozaki."
 
-        ry "Ah, I'm sorry."
+    ry "Ah, I'm sorry."
 
-        th "Madame Ozaki has requested your services."
+    th "Madame Ozaki has requested your services."
 
-        ry "My services, when and where if I may ask?"
+    ry "My services, when and where if I may ask?"
 
-        th "Today at Bar Poirot, Upper Shinjuku around 10AM Today."
+    th "Today at Bar Poirot, Upper Shinjuku around 10AM Today."
 
-        ry "T-today?!"
+    ry "T-today?!"
 
-        th "Yes today."
+    th "Yes today."
         
-        ry "A-alright then, I'll be there in a bit."
+    ry "A-alright then, I'll be there in a bit."
         
-        th "Very well then, I will inform Madame Ozaki about this thank you for your time Mr. Sakaguchi."
+    th "Very well then, I will inform Madame Ozaki about this thank you for your time Mr. Sakaguchi."
 
-        ry "Mm, thank you as well."
+    ry "Mm, thank you as well."
 
-        ry "Ahh. Another day, another job huh."
-        hide ryouhei_happy
+    ry "Ahh. Another day, another job huh."
+    hide ryouhei_happy
 
 
         # TODO reformat this as monolog that showsa nd scrolls down something something.
         # For all theese "monlogue bricks"
-        "For the past few years of my life, I've been stuck within this loop of living."
-        "A constant state of being awake and not trying at all."
-        "To best describe it, I'm living for the sake of living. I'm on autopilot I suppose."
-        "But to my knowledge, there's nothing much that I can do about it."
-        "Since I was a child, I've been abandoned here in the streets of Shinjuku."
-        "I've always been afraid of death, afraid of the unknown."
-        "But through some incredible accident, I found out that I had special powers, what people call Talent."
-        "A pendant with a large emerald in its center, I call it 'Samsara'."
-        "Those who see through the gem are able to see their future"
-        "As long as they follow what they see, then their future will not change."
-        "In a way for myself and others, this is a way to feel safe about our future."
-        "And to the lords of Shinjuku, a way to keep control of their empires."
-        "Though things like that are rather trivial to me."
-        "Each passing day is no different, a type of mutual understanding between the houses and myself."
-        "Because I cannot control what Samsara shows, it helps these lords prepare against their inevitable deaths."
-        "Between the three houses of Shinjuku, The Ozakis, The Hirotsus and The Yosanos. I'm one of the few who can freely roam between their territories."
-        "Those who seek to hurt me will eventually be killed by one of the three houses."
-        "At the end of the day, I'm only a pawn for them."
-        "I cannot die because they do not let me."
-        "But at the same time I cannot live because they rely on me."
+    "For the past few years of my life, I've been stuck within this loop of living."
+    "A constant state of being awake and not trying at all."
+    "To best describe it, I'm living for the sake of living. I'm on autopilot I suppose."
+    "But to my knowledge, there's nothing much that I can do about it."
+    "Since I was a child, I've been abandoned here in the streets of Shinjuku."
+    "I've always been afraid of death, afraid of the unknown."
+    "But through some incredible accident, I found out that I had special powers, what people call Talent."
+    "A pendant with a large emerald in its center, I call it 'Samsara'."
+    "Those who see through the gem are able to see their future"
+    "As long as they follow what they see, then their future will not change."
+    "In a way for myself and others, this is a way to feel safe about our future."
+    "And to the lords of Shinjuku, a way to keep control of their empires."
+    "Though things like that are rather trivial to me."
+    "Each passing day is no different, a type of mutual understanding between the houses and myself."
+    "Because I cannot control what Samsara shows, it helps these lords prepare against their inevitable deaths."
+    "Between the three houses of Shinjuku, The Ozakis, The Hirotsus and The Yosanos. I'm one of the few who can freely roam between their territories."
+    "Those who seek to hurt me will eventually be killed by one of the three houses."
+    "At the end of the day, I'm only a pawn for them."
+    "I cannot die because they do not let me."
+    "But at the same time I cannot live because they rely on me."
 
-        ry "I'll be off."
+    ry "I'll be off."
 
 #[A/N Opening door sound]
 # TODO, Opening Door SFX???
-        "Who am I kidding, I live alone anyway."
-        "Despite making more than enough money to live, I cannot live in the decadent territory known as Upper Shinjuku."
+    "Who am I kidding, I live alone anyway."
+    "Despite making more than enough money to live, I cannot live in the decadent territory known as Upper Shinjuku."
     jump shinjuku
 
 label shinjuku:
 #[A/N Transition to Upper Shinjuku]
     scene bg shinjuku
     with fade
-        "That place corrupts people; wealth and greed fuel those who live there."
-        "Just last week the Ozaki clan toppled a famous host club, murdered the owner and pinned him to the signboard by stabbing a katana through his heart."
-        "But as I said, fighting back would mean that I'll be next on their hit list."
-        "Living in lower Shinjuku is not any better either."
-        "It's a den of scum and villainy, eventually everyone has to kill here at some point."
-        "Be it the lower class or the upper class, everyone has blood in their hands."
-        "Suddenly I felt a buzz in my pocket, a notification from my phone."
+    "That place corrupts people; wealth and greed fuel those who live there."
+    "Just last week the Ozaki clan toppled a famous host club, murdered the owner and pinned him to the signboard by stabbing a katana through his heart."
+    "But as I said, fighting back would mean that I'll be next on their hit list."
+    "Living in lower Shinjuku is not any better either."
+    "It's a den of scum and villainy, eventually everyone has to kill here at some point."
+    "Be it the lower class or the upper class, everyone has blood in their hands."
+    "Suddenly I felt a buzz in my pocket, a notification from my phone."
 
         # TODO, Format for text message??? otherwise its a custom scene bg
-        r "hey ryou-chan! I'll be around upper shinjuku around 12pm for lunch with a bunch of my friends."
-        r "if you want there's a new ice cream parlor opening soon, we can meet around 1 or 2pm"
+    r "hey ryou-chan! I'll be around upper shinjuku around 12pm for lunch with a bunch of my friends."
+    r "if you want there's a new ice cream parlor opening soon, we can meet around 1 or 2pm"
 
-        "Begrudgingly, I opened my messaging app and replied"
+    "Begrudgingly, I opened my messaging app and replied"
 
-        ry "mm, i'll see if I'll be there."
+    ry "mm, i'll see if I'll be there."
 
-        "As quickly as I replied, I turned off my phone."
-        ry "That woman . . ."
+    "As quickly as I replied, I turned off my phone."
+    ry "That woman . . ."
 
-        "Reimi is a friend I met by chance, she lives nearby my house and coincidentally she has a Talent of her own."
-        "Strangely enough, despite the bleak situation we live in, she's always able to smile."
-        "Sometimes I wonder if I could be like her, but having company in misery is better than nothing."
-        "At the very least, I have something to look forward to after this job."
-        "I quickly hopped onto a tram heading towards Upper Shinjuku."
-        "Upper Shinjuku and Lower Shinjuku is divided by a tram system connecting the two."
-        "To get to the upper city, you need to take"
+    "Reimi is a friend I met by chance, she lives nearby my house and coincidentally she has a Talent of her own."
+    "Strangely enough, despite the bleak situation we live in, she's always able to smile."
+    "Sometimes I wonder if I could be like her, but having company in misery is better than nothing."
+    "At the very least, I have something to look forward to after this job."
+    "I quickly hopped onto a tram heading towards Upper Shinjuku."
+    "Upper Shinjuku and Lower Shinjuku is divided by a tram system connecting the two."
+    "To get to the upper city, you need to take"
 
-        to "We have arrived at the Southern Terrace, next stop is Kabuki-chou"
+    to "We have arrived at the Southern Terrace, next stop is Kabuki-chou"
 
-        "Quickly I stood up and left the tram."
+    "Quickly I stood up and left the tram."
 
-        ry "Keep the change."
+    ry "Keep the change."
 
-        "Upper Shinjuku is a whole different world to me, open spaces and the tall skyscrapers it is truly a sight to behold."
-        "Unlike the crummy Lower part of town, there is air to breathe here, a sense of unattainable freedom."
-        "Checking the clock on my phone, it's only 9:30AM. I still have 30 minutes free."
-        "Though Reimi is not around, I guess I should just head towards Bar Poirot."
-        jump barlabel
+    "Upper Shinjuku is a whole different world to me, open spaces and the tall skyscrapers it is truly a sight to behold."
+    "Unlike the crummy Lower part of town, there is air to breathe here, a sense of unattainable freedom."
+    "Checking the clock on my phone, it's only 9:30AM. I still have 30 minutes free."
+    "Though Reimi is not around, I guess I should just head towards Bar Poirot."
+    jump barlabel
 label barlabel:
     #[Transition to Bar Poirot]
     scene bg Poirot
     with fade
-        "Entering the bar, the air within was filled with smoke coming off cigarettes."
-        "Murmured chatters of secrets and unknown affairs pass through my ears."
-        "It felt warm, but in the sense that you were in hell, boiled alive with the sinners."
-        "As I powered through the tobacco-scented air, there sat a woman and two of her bodyguards."
-        "The man to her right stood up and approached me."
+    "Entering the bar, the air within was filled with smoke coming off cigarettes."
+    "Murmured chatters of secrets and unknown affairs pass through my ears."
+    "It felt warm, but in the sense that you were in hell, boiled alive with the sinners."
+    "As I powered through the tobacco-scented air, there sat a woman and two of her bodyguards."
+    "The man to her right stood up and approached me."
 
-        th "Good morning, my name is Yamada Tatsuhiro. I assume you are Sakaguchi Ryouhei."
-        ry "Yes, yes I am."
-        th "Alright, right this way please."
+    th "Good morning, my name is Yamada Tatsuhiro. I assume you are Sakaguchi Ryouhei."
+    ry "Yes, yes I am."
+    th "Alright, right this way please."
 
-        "And there the woman sat, her pale face and white kimono contrasting against the old brown leather of the sofa she sat on."
-        "Her eyes were sharp and judgmental, just as expected from the leader of the Ozaki Clan."
-        "Her name was Ozaki Kei, queen of Kabuki-chou."
+    "And there the woman sat, her pale face and white kimono contrasting against the old brown leather of the sofa she sat on."
+    "Her eyes were sharp and judgmental, just as expected from the leader of the Ozaki Clan."
+    "Her name was Ozaki Kei, queen of Kabuki-chou."
 
     show ozaki_kei happy
     #Question, mending di address si ozaki kei jd Ozaki, Kei ato Ozaki Kei?
@@ -249,208 +254,249 @@ label barlabel:
         o "I'll pay you the usual alright, 50,000 yen?"
         ry "Alright, thank you Madame Ozaki"
         hide ozaki_kei happy
-label uppershinjuku
+label uppershinjuku:
 #[Transition to Upper Shinjuku]
+# Question, scenes here would be izakaya outside? shinjuku? or what? how are we going to transition this?
+scene bg bar_outdoor
+with fade
+        "I exhaled . . . thank God this job is over."
+        "Thankfully, despite her temper, Madame Ozaki is a well paying client"
+        "Even if things don't go her way at all times, I'm still able to reason with her."
+        "It's something at least."
+        "She handed me the money in a bag and Yamada returned Samsara to me."
+
+        o "Don't spend it all in one place, Mr. Sakaguchi. Pardon my temper."
+        ry "Thank you, Madame Ozaki."
+# Tentative Transition to shinjuku Background
 scene bg shinjuku
 with fade
-I exhaled . . . thank God this job is over.
-Thankfully, despite her temper, Madame Ozaki is a well paying client
-Even if things don't go her way at all times, I'm still able to reason with her.
-It's something at least.
-She handed me the money in a bag and Yamada returned Samsara to me.
+        "As soon as she handed over the money, I quickly left the bar."
+        "Just as I stepped out of the place, my phone started to ring."
+        "Looking at the contact name, it's Reimi."
+        "I could only exhale and pick it up."
 
-Kei: "Don't spend it all in one place, Mr. Sakaguchi. Pardon my temper."
-Ryouhei: "Thank you, Madame Ozaki."
+        r "OI RYOU-CHAN!"
+        ry "Y-yes?"
+        r "I got off early, let's go to that parlor now!"
+        ry "Well, I'm near Kabuki-chou right now, where is the parlor at?"
+        r "Harajuku. Can you make it on time?"
+        ru "I'll probably go borrow a scooter, give me 30 minutes alright?"
+        r "If you're not here in 30 you're buying me an extra scoop alright!"
+        r "Ehehehe, I'm just kidding."
+        ry "I just got paid, so I can get you that if you want."
+        r "E-eh? Well then, I'll be waiting for you."
 
-As soon as she handed over the money, I quickly left the bar.
-Just as I stepped out of the place, my phone started to ring.
-Looking at the contact name, it's Reimi.
-I could only exhale and pick it up.
+        "She turned off the call from her side"
+        "Well, next is to find a scooter rental spot. At least it's everywhere here in Upper Shinjuku."
 
-Reimi: "OI RYOU-CHAN!"
-Ryouhei: "Y-yes?"
-Reimi: "I got off early, let's go to that parlor now!"
-Ryouhei: "Well, I'm near Kabuki-chou right now, where is the parlor at?"
-Reimi: "Harajuku. Can you make it on time?"
-Ryouhei: "I'll probably go borrow a scooter, give me 30 minutes alright?"
-Reimi: "If you're not here in 30 you're buying me an extra scoop alright!"
-Reimi: "Ehehehe, I'm just kidding."
-Ryouhei: "I just got paid, so I can get you that if you want."
-Reimi: "E-eh? Well then, I'll be waiting for you."
+# TODO make this a title card format?
+scene black
+with fade
+"-Title Card: 35 minutes later-"
+#[Transition to Harajuku]
 
-She turned off the call from her side
-Well, next is to find a scooter rental spot. At least it's everywhere here in Upper Shinjuku.
+scene bg harajuku
+with fade
+        "Had I known . . ."
+        "Traffic was light today . . ."
+        "I would've . . ."
+        "TAKEN THE TAXI!!" #(Screen jitter here) # TODO Screen Jitter
+        "I could only drag my own body to Harajuku, right in front of the gate there I saw her, surrounded by other folks."
+        "Reimi Yanagiwara, a professional athlete and a fellow Talent user."
+        "A famous gladiator who fights at the Shibuya Arena."
+        "I'm not surprised that someone like her is constantly surrounded by fans."
 
--Title Card: 35 minutes later-
-[Transition to Harajuku]
+        ry "Oi! Yanagiwara!"
+        show reimi_happy
+        with fade
 
-Had I known . . .
-Traffic was light today . . .
-I would've . . .
-TAKEN THE TAXI!! (Screen jitter here)
-I could only drag my own body to Harajuku, right in front of the gate there I saw her, surrounded by other folks.
-Reimi Yanagiwara, a professional athlete and a fellow Talent user.
-A famous gladiator who fights at the Shibuya Arena.
-I'm not surprised that someone like her is constantly surrounded by fans.
+        "She turned her heads towards me"
 
-Ryouhei: "Oi! Yanagiwara!"
+        r "Ah! Ryou-chan!"
 
-She turned her heads towards me
+        "Reimi launches herself towards me."
 
-Reimi: "Ah! Ryou-chan!"
+        r "Ryou-chan! You're finally here!"
+        ry "Please, can we not use our first names here, people will get the wrong idea!"
+        # Programmer's Note: Jesus Thats a lot of characters to define
+        cr "Is he . . ."
+        cr "Reimi-chan is . . .?"
 
-Reimi launches herself towards me.
+        "What did I bring myself into? This woman . . ."
 
-Reimi: "Ryou-chan! You're finally here!"
-Ryouhei: "Please, can we not use our first names here, people will get the wrong idea!"
-Crowd: "Is he . . ."
-Crowd: "Reimi-chan is . . .?"
+        r "Ah, Sakaguchi I'm sorry I forgot!"
+        r "I'm sorry guys but I have to go for a bit!"
 
-What did I bring myself into? This woman . . .
+        "Reimi took my hand and dragged me away into Harajuku."
 
-Reimi: "Ah, Sakaguchi I'm sorry I forgot!"
-Reimi: "I'm sorry guys but I have to go for a bit!"
-
-Reimi took my hand and dragged me away into the Harajuku.
-
-Ryouhei: "You didn't tell you were busy with your fans?!"
-Reimi: "Does it look like I can control my fans?!"
-Reimi: "Anyway Ryou-chan, the ice cream parlor?"
-Ryouhei: "Mhm, you said you want two scoops right?"
-Reimi: "From the price I've seen, it's not terribly expensive."
-Ryouhei: "Don't worry, price isn't an issue."
-Reimi: "By the way, you said you got a payment just now, Ryou-chan?"
-
-
-
-[Choice A]
-Ryouhei: "Ah, I was getting a payment for a previous job" (Reimi +5)
-Reimi: "Hmph, I thought you were doing that fortune telling job again."
-Ryouhei: "Well, the payment was for a previous fortune telling job but, yeah."
-Reimi: "Well, the good thing is that you're not really stuck there anymore.
-
-[Choice B]
-Ryouhei: "Yeah, they asked me to do some fortune telling" (Reimi -5)
-Reimi: "Again? I thought you said that you were thinking of stopping."
-Ryouhei: "I have to live too, you know.”
-Reimi: "Well, as long as you're safe. I really don't like you being with those people.”
+        ry "You didn't tell you were busy with your fans?!"
+        r "Does it look like I can control my fans?!"
+        r "Anyway Ryou-chan, the ice cream parlor?"
+        ry "Mhm, you said you want two scoops right?"
+        r "From the price I've seen, it's not terribly expensive."
+        ry "Don't worry, price isn't an issue."
+        r "By the way, you said you got a payment just now, Ryou-chan?"
+        jump choice1
 
 
-[back to normal]
-Ryouhei: "I'll keep that in mind, I'm sorry if I worried you."
-Ryouhei: "There's been a lot of short notice jobs lately, I don't understand why."
-Reimi: "And that's why you come to the Shibuya Arena, it's a neutral area so you don't have to worry much. Also, there's me!"
-Ryouhei: "Then who's going to buy you that double-scoop ice cream if I don't get paid?"
-Reimi: "Oh shut up! I have my own money, Ryou-chan."
+menu choice1:
+    "Ah, I was getting a payment for a previous job":
+            jump choicea
+            $reimi_pts += 5
+        
+    "Yeah, they asked me to do some fortune telling":
+            jump choiceb
+            $reimi_pts -= 5
 
-Eventually we reached the ice cream parlor, Reimi was already excitedly looking through the flavors
-But for myself, I don't really know what I want to pick.
 
-Ryouhei: "Reimi . . . tell me which flavor is the best?"
-Reimi: "The best huh? From what I've seen on SNS, people seem to like the caramel apple flavor."
-Ryouhei: "What about you? Which flavor do you want? I kind of promised that I'll get you two scoops."
-Reimi: "It's only 300 yen per scoop. I can pay for myself, you know."
-Ryouhei: "300? That sounds like a full dinner."
-Reimi: "Let's be a little hedonistic for once, Ryouhei. Besides, don't worry too much, I'll pay for myself."
-Ryouhei: "Nah, I'll pay for you, Reimi!"
-Reimi: "Fine then if you insist."
 
-I ended up buying her a choco-mint and bubblegum ice cream cone.
-While I got myself an apple caramel flavored cone.
-Honestly, even if she may act a little clingy.
-I'm glad to have a friend like her handy.
-Sometimes looking at her battle-hardened face, I can only wish to have that kind of strength
-To face near-death experiences on the daily.
-To ride against her opponents . . . .
-Really she is so much cooler than I am.
+#[Choice A]
+label choicea:
+        ry "Ah, I was getting a payment for a previous job"
+        r "Hmph, I thought you were doing that fortune telling job again."
+        ry "Well, the payment was for a previous fortune telling job but, yeah."
+        r "Well, the good thing is that you're not really stuck there anymore."
+        jump commonroute
 
-Reimi: "Oi, Ryou-chan. What's the matter?"
-Ryouhei: "Hmmm? Why?"
-Reimi: "Nah, you've been staring at your cone for quite a bit, is there something in your mind?"
-Ryouhei: "I'm sorry about being so busy lately."
-Ryouhei: "I want to make time for you but . . . circumstances."
+#[Choice B]
+label choiceb:
+        ry "Yeah, they asked me to do some fortune telling"
+        r "Again? I thought you said that you were thinking of stopping."
+        ry "I have to live too, you know."
+        r "Well, as long as you're safe. I really don't like you being with those people."
+        jump commonroute
 
-Reimi leaned back to the wall
 
-Reimi: "Tell me, Ryou-chan."
-Ryouhei: "Hmm? What's the matter?"
-Reimi: "Have you ever thought . . . ."
-Ryouhei: "Thought of what?"
-Reimi: "Have you ever thought of running away?"
-Reimi: "Just . . . leaving this insanity behind and run."
+#[back to normal]
+label commonroute:
+    ry "I'll keep that in mind, I'm sorry if I worried you."
+    ry "There's been a lot of short notice jobs lately, I don't understand why."
+    r "And that's why you come to the Shibuya Arena, it's a neutral area so you don't have to worry much. Also, there's me!"
+    ry "Then who's going to buy you that double-scoop ice cream if I don't get paid?"
+    r "Oh shut up! I have my own money, Ryou-chan."
 
-Menu (insertnamehere):
-“Choice A”
+    "Eventually we reached the ice cream parlor, Reimi was already excitedly looking through the flavors"
+    "But for myself, I don't really know what I want to pick."
 
-“Choice B”
+    ry "Reimi . . . tell me which flavor is the best?"
+    r "The best huh? From what I've seen on SNS, people seem to like the caramel apple flavor."
+    ry "What about you? Which flavor do you want? I kind of promised that I'll get you two scoops."
+    r "It's only 300 yen per scoop. I can pay for myself, you know."
+    ry "300? That sounds like a full dinner."
+    r "Let's be a little hedonistic for once, Ryouhei. Besides, don't worry too much, I'll pay for myself."
+    ry "Nah, I'll pay for you, Reimi!"
+    r "Fine then if you insist."
 
-[Choice A]
-Ryouhei: "Honestly, given the chance. I'd like to run too." (Reimi +5)
-Reimi: "Really?"
-Ryouhei: "I get a little tired about this fortune telling stuff."
-Reimi: "That's kind of understandable."
-Ryouhei: "Even if I can't run, I just want out of this business. I want to open an izakaya, you know."
-Ryouhei: "I'd be happy, even with a life like that."
+    "I ended up buying her a choco-mint and bubblegum ice cream cone."
+    "While I got myself an apple caramel flavored cone."
+    "Honestly, even if she may act a little clingy."
+    "I'm glad to have a friend like her handy."
+    "Sometimes looking at her battle-hardened face, I can only wish to have that kind of strength"
+    "To face near-death experiences on the daily."
+    "To ride against her opponents . . . ."
+    "Really she is so much cooler than I am."
 
-[Choice B]
-Ryouhei: "I feel fine with this life, I've checked my fortune several times and I'll be fine" (Reimi -5)
-Reimi: "Well then, I mean . . . you do get decent pay. I'm not surprised hahaha."
-Ryouhei: "Even if I do get rich, I don't want to be greedy like those folks."
-Ryouhei: "Maybe I can even own my own izakaya."
+    r "Oi, Ryou-chan. What's the matter?"
+    ry "Hmmm? Why?"
+    r "Nah, you've been staring at your cone for quite a bit, is there something in your mind?"
+    ry "I'm sorry about being so busy lately."
+    ry "I want to make time for you but . . . circumstances."
 
-Renpy note: Both choices jump back to the common route label.in [back to normal]
+    "Reimi leaned back to the wall"
 
-[back to normal]
-Reimi: "You're gonna serve your yakisoba there?"
-Ryouhei: "Of course haha."
-Ryouhei: "Speaking of, do you want some yakisoba?"
-Reimi: "Only if you do it at my place, I need an extra hand to clean up my room."
-Ryouhei: "Well, we can go to the convenience store first then we go back to your place."
-Reimi: "Sounds like we got dinner!"
+    r "Tell me, Ryou-chan."
+    ry "Hmm? What's the matter?"
+    r "Have you ever thought . . . ."
+    ry "Thought of what?"
+    r "Have you ever thought of running away?"
+    r "Just . . . leaving this insanity behind and run."
 
-After finishing our ice cream, we decided to head to a local corner store to get some yakisoba.
-Yakisoba is her favorite food, often saying that it reminds her of our childhood.
-At the end of the day, the two of us decided to head home together.
-But before that we decided to buy some things to add to our yakisoba.
+    menu escapechoice:
+        "Honestly given the chance. I'd like to run too.":
+            jump choicea2
+            $reimi_pts += 5
+        
+        "I feel fine with this life.":
+            jump choiceb2
+            $reimi_pts -= 5
 
--Title Card: 30 minutes later-
-[Transition to Reimi Room]
-Reimi: "Ahhhh, I'm beat."
 
-Reimi shouted, immediately jumping onto her bed.
+#[Choice A]
+label choicea2:
+    ry "Honestly, given the chance. I'd like to run too."
+    r "Really?"
+    ry "I get a little tired about this fortune telling stuff."
+    r "That's kind of understandable."
+    ry "Even if I can't run, I just want out of this business. I want to open an izakaya, you know."
+    ry "I'd be happy, even with a life like that."
+    jump commonroute2
 
-Ryouhei: "Can you at least take the gas stove out while I prepare the ingredients"
-Reimi: "Yeah, give me a minute."
+#[Choice B]
+label choiceb2:
+    ry "I feel fine with this life, I've checked my fortune several times and I'll be fine"
+    r "Well then, I mean . . . you do get decent pay. I'm not surprised hahaha."
+    ry "Even if I do get rich, I don't want to be greedy like those folks."
+    ry "Maybe I can even own my own izakaya."
+    jump commonroute2
 
-Eating yakisoba together is almost tradition at this point, she prepares to cook the noodles while I prepare the other ingredients.
-Sliced pork yakisoba is a delight.
-After some preparations I started working on the Yakisoba.
+# Programmer's note: Both choices jump back to the common route label.in [back to normal]
 
-Reimi: "It's relaxing to do this sometimes, though I wish we could invite more friends."
-Ryouhei: "You don't have friends in the arena?"
-Reimi: "I do but I'm just afraid if they'll disturb these quiet moments, haaaa."
-Ryouhei: "I don't mind honestly, the more the merrier."
-Reimi: "I thought you were more low-key, you know. You seem to be the type to enjoy a smaller company."
-Ryouhei: "Well, for one I feel like I need more social interaction."
-Reimi: "True, true."
-Ryouhei: "By the way, get two plates, the yakisoba is done."
+#[back to normal]
+label commonroute2:
+    r "You're gonna serve your yakisoba there?"
+    ry "Of course haha."
+    ry "Speaking of, do you want some yakisoba?"
+    r "Only if you do it at my place, I need an extra hand to clean up my room."
+    ry "Well, we can go to the convenience store first then we go back to your place."
+    r "Sounds like we got dinner!"
 
-Reimi sat on her bed while I sat on the floor leaning against the closet.
-These small moments, even if its just eating a simple meal.
+    "After finishing our ice cream, we decided to head to a local corner store to get some yakisoba."
+    "Yakisoba is her favorite food, often saying that it reminds her of our childhood."
+    "At the end of the day, the two of us decided to head home together."
+    "But before that we decided to buy some things to add to our yakisoba."
 
-Reimi: "Haaaaa, Ryou-chan. Your yakisoba is the best!"
-Ryouhei: "You don't have to put it that way."
-Reimi: "I'll try to invite friends when I have the time!"
-Ryouhei: "Mhm, it might be fun honestly."
+"-Title Card: 30 minutes later-"
+#[Transition to Reimi Room]
+scene bg reimi_room
+with fade
+    r "Ahhhh, I'm beat."
 
-After eating, I decided to clean up and as quickly as I arrived, I walked home alone.
-By this point the moon was bright . . .
-The walk home was somber, accompanied by the chirping of birds.
-Having friends like Reimi keeps me going, even though we live completely different lives . . .
-She's really one of the few people who care for me.
-I opened the door to my house and dropped onto my bed.
-Before I knew it, I fell asleep
-    #[End Day 1]
+    "Reimi shouted, immediately jumping onto her bed."
+
+    ry "Can you at least take the gas stove out while I prepare the ingredients"
+    r "Yeah, give me a minute."
+
+    "Eating yakisoba together is almost tradition at this point, she prepares to cook the noodles while I prepare the other ingredients."
+    "Sliced pork yakisoba is a delight."
+    "After some preparations I started working on the Yakisoba."
+
+    r "It's relaxing to do this sometimes, though I wish we could invite more friends."
+    ry "You don't have friends in the arena?"
+    r "I do but I'm just afraid if they'll disturb these quiet moments, haaaa."
+    ry "I don't mind honestly, the more the merrier."
+    r "I thought you were more low-key, you know. You seem to be the type to enjoy a smaller company."
+    ry "Well, for one I feel like I need more social interaction."
+    r "True, true."
+    ry "By the way, get two plates, the yakisoba is done."
+
+    "Reimi sat on her bed while I sat on the floor leaning against the closet."
+    "These small moments, even if its just eating a simple meal."
+
+    r "Haaaaa, Ryou-chan. Your yakisoba is the best!"
+    ry "You don't have to put it that way."
+    r "I'll try to invite friends when I have the time!"
+    ry "Mhm, it might be fun honestly."
+
+    #TODO transition and bg for this scene 
+    "After eating, I decided to clean up and as quickly as I arrived, I walked home alone."
+    "By this point the moon was bright . . ."
+    "The walk home was somber, accompanied by the chirping of birds."
+    "Having friends like Reimi keeps me going, even though we live completely different lives . . ."
+    "She's really one of the few people who care for me."
+    "I opened the door to my house and dropped onto my bed."
+    "Before I knew it, I fell asleep"
+    jump day_2
+#[End Day 1]
 
 
 label day_2:
