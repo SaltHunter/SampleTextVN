@@ -8,7 +8,7 @@
 define r = Character("Reimu")
 define ry = Character("Ryouhei")
 define t = Character("Tatsuki")
-define o = Character("Ozaki")
+define o = Character("Ozaki Kei")
 define n = Character ("Naotora")
 define th = Character ("Tatsuhiro")
 define ih = Character ("Isurugi Hirotsu")
@@ -17,7 +17,8 @@ define ih = Character ("Isurugi Hirotsu")
 # Definition of Misc characters go here
 define yak1 = Character("Yakuza Member #1")
 define cl = Character("Caller Voice #1")
-
+define to = Character ("Train Operator")
+define w = Character("Woman")
 
 # Definition of Flags go here.
 
@@ -49,41 +50,42 @@ label day_1:
     show ryouhei_happy
     with fade
     
-        r "Mnghh..."
+        ry "Mnghh..."
 
         "My phone sprang to life, its familiar buzz pulling me out of my sleep."
 
-        r "God, give me 5 more minutes."
+        ry "God, give me 5 more minutes."
 
         "The phone continued to ring, with not much way to avoid it, I quickly picked it up, despite my half-asleep state."
 
-        r "Good Morning, this is Sakaguchi Ryouhei, sorry I just woke up . . .how can I help you today?"
+        ry "Good Morning, this is Sakaguchi Ryouhei, sorry I just woke up . . .how can I help you today?"
         
         cl "Good morning Mr. Sakaguchi, my name is Yamada Tatsuhiro representing Madame Ozaki."
 
-        r "Ah, I'm sorry."
+        ry "Ah, I'm sorry."
 
         th "Madame Ozaki has requested your services."
 
-        r "My services, when and where if I may ask?"
+        ry "My services, when and where if I may ask?"
 
         th "Today at Bar Poirot, Upper Shinjuku around 10AM Today."
 
-        r "T-today?!"
+        ry "T-today?!"
 
         th "Yes today."
         
-        r "A-alright then, I'll be there in a bit."
+        ry "A-alright then, I'll be there in a bit."
         
         th "Very well then, I will inform Madame Ozaki about this thank you for your time Mr. Sakaguchi."
 
-        r "Mm, thank you as well."
+        ry "Mm, thank you as well."
 
-        r "Ahh. Another day, another job huh."
+        ry "Ahh. Another day, another job huh."
         hide ryouhei_happy
 
 
         # TODO reformat this as monolog that showsa nd scrolls down something something.
+        # For all theese "monlogue bricks"
         "For the past few years of my life, I've been stuck within this loop of living."
         "A constant state of being awake and not trying at all."
         "To best describe it, I'm living for the sake of living. I'm on autopilot I suppose."
@@ -105,137 +107,152 @@ label day_1:
         "I cannot die because they do not let me."
         "But at the same time I cannot live because they rely on me."
 
-        r "I'll be off."
+        ry "I'll be off."
 
 #[A/N Opening door sound]
 # TODO, Opening Door SFX???
-Who am I kidding, I live alone anyway.
-Despite making more than enough money to live, I cannot live in the decadent territory known as Upper Shinjuku.
+        "Who am I kidding, I live alone anyway."
+        "Despite making more than enough money to live, I cannot live in the decadent territory known as Upper Shinjuku."
+    jump shinjuku
 
-[A/N Transition to Upper Shinjuku]
-That place corrupts people; wealth and greed fuel those who live there.
-Just last week the Ozaki clan toppled a famous host club, murdered the owner and pinned him to the signboard by stabbing a katana through his heart.
-But as I said, fighting back would mean that I'll be next on their hit list.
-Living in lower Shinjuku is not any better either.
-It's a den of scum and villainy, eventually everyone has to kill here at some point.
-Be it the lower class or the upper class, everyone has blood in their hands.
-Suddenly I felt a buzz in my pocket, a notification from my phone.
+label shinjuku:
+#[A/N Transition to Upper Shinjuku]
+    scene bg shinjuku
+    with fade
+        "That place corrupts people; wealth and greed fuel those who live there."
+        "Just last week the Ozaki clan toppled a famous host club, murdered the owner and pinned him to the signboard by stabbing a katana through his heart."
+        "But as I said, fighting back would mean that I'll be next on their hit list."
+        "Living in lower Shinjuku is not any better either."
+        "It's a den of scum and villainy, eventually everyone has to kill here at some point."
+        "Be it the lower class or the upper class, everyone has blood in their hands."
+        "Suddenly I felt a buzz in my pocket, a notification from my phone."
 
-Reimi: [hey ryou-chan! I'll be around upper shinjuku around 12pm for lunch with a bunch of my friends.]
-Reimi: [if you want there's a new ice cream parlor opening soon, we can meet around 1 or 2pm]
+        # TODO, Format for text message??? otherwise its a custom scene bg
+        r "hey ryou-chan! I'll be around upper shinjuku around 12pm for lunch with a bunch of my friends."
+        r "if you want there's a new ice cream parlor opening soon, we can meet around 1 or 2pm"
 
-Begrudgingly, I opened my messaging app and replied
+        "Begrudgingly, I opened my messaging app and replied"
 
-Ryouhei: [mm, i'll see if I'll be there.]
+        ry "mm, i'll see if I'll be there."
 
-As quickly as I replied, I turned off my phone.
-Ryouhei: "That woman . . ."
+        "As quickly as I replied, I turned off my phone."
+        ry "That woman . . ."
 
-Reimi is a friend I met by chance, she lives nearby my house and coincidentally she has a Talent of her own.
-Strangely enough, despite the bleak situation we live in, she's always able to smile.
-Sometimes I wonder if I could be like her, but having company in misery is better than nothing.
-At the very least, I have something to look forward to after this job.
-I quickly hopped onto a tram heading towards Upper Shinjuku.
-Upper Shinjuku and Lower Shinjuku is divided by a tram system connecting the two.
-To get to the upper city, you need to take
+        "Reimi is a friend I met by chance, she lives nearby my house and coincidentally she has a Talent of her own."
+        "Strangely enough, despite the bleak situation we live in, she's always able to smile."
+        "Sometimes I wonder if I could be like her, but having company in misery is better than nothing."
+        "At the very least, I have something to look forward to after this job."
+        "I quickly hopped onto a tram heading towards Upper Shinjuku."
+        "Upper Shinjuku and Lower Shinjuku is divided by a tram system connecting the two."
+        "To get to the upper city, you need to take"
 
-Tram Operator: "We have arrived at the Southern Terrace, next stop is Kabuki-chou"
+        to "We have arrived at the Southern Terrace, next stop is Kabuki-chou"
 
-Quickly I stood up and left the tram.
+        "Quickly I stood up and left the tram."
 
-Ryouhei: "Keep the change."
+        ry "Keep the change."
 
-Upper Shinjuku is a whole different world to me, open spaces and the tall skyscrapers it is truly a sight to behold.
-Unlike the crummy Lower part of town, there is air to breathe here, a sense of unattainable freedom.
-Checking the clock on my phone, it's only 9:30AM. I still have 30 minutes free.
-Though Reimi is not around, I guess I should just head towards Bar Poirot.
+        "Upper Shinjuku is a whole different world to me, open spaces and the tall skyscrapers it is truly a sight to behold."
+        "Unlike the crummy Lower part of town, there is air to breathe here, a sense of unattainable freedom."
+        "Checking the clock on my phone, it's only 9:30AM. I still have 30 minutes free."
+        "Though Reimi is not around, I guess I should just head towards Bar Poirot."
+        jump barlabel
+label barlabel:
+    #[Transition to Bar Poirot]
+    scene bg Poirot
+    with fade
+        "Entering the bar, the air within was filled with smoke coming off cigarettes."
+        "Murmured chatters of secrets and unknown affairs pass through my ears."
+        "It felt warm, but in the sense that you were in hell, boiled alive with the sinners."
+        "As I powered through the tobacco-scented air, there sat a woman and two of her bodyguards."
+        "The man to her right stood up and approached me."
 
-[Transition to Bar Poirot]
-Entering the bar, the air within was filled with smoke coming off cigarettes.
-Murmured chatters of secrets and unknown affairs pass through my ears.
-It felt warm, but in the sense that you were in hell, boiled alive with the sinners.
-As I powered through the tobacco-scented air, there sat a woman and two of her bodyguards.
-The man to her right stood up and approached me.
+        th "Good morning, my name is Yamada Tatsuhiro. I assume you are Sakaguchi Ryouhei."
+        ry "Yes, yes I am."
+        th "Alright, right this way please."
 
-Tatsuhiro: "Good morning, my name is Yamada Tatsuhiro. I assume you are Sakaguchi Ryouhei."
-Ryouhei: "Yes, yes I am."
-Tatsuhiro: "Alright, right this way please."
+        "And there the woman sat, her pale face and white kimono contrasting against the old brown leather of the sofa she sat on."
+        "Her eyes were sharp and judgmental, just as expected from the leader of the Ozaki Clan."
+        "Her name was Ozaki Kei, queen of Kabuki-chou."
 
-And there the woman sat, her pale face and white kimono contrasting against the old brown leather of the sofa she sat on.
-Her eyes were sharp and judgmental, just as expected from the leader of the Ozaki Clan.
-Her name was Ozaki Kei, queen of Kabuki-chou.
+    show ozaki_kei happy
+    #Question, mending di address si ozaki kei jd Ozaki, Kei ato Ozaki Kei?
+        w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
+        ry "A... Ah, yes. Good to meet you again, Madame Ozaki."
+        o "As per last time you showed me that I will take control of Kabuki-chou, which thankfully happened as per your prediction. Now I'd like to ask you for some . . . extra favors."
 
-Woman: "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
-Ryouhei: "A... Ah, yes. Good to meet you again, Madame Ozaki."
-Kei: "As per last time you showed me that I will take control of Kabuki-chou, which thankfully happened as per your prediction. Now I'd like to ask you for some . . . extra favors."
+        "Another one of her bodyguards handed her an ivory cigarette holder and lit a fire."
+        "Meanwhile Yamada opens a bottle of cognac and pours it into a wine glass."
 
-Another one of her bodyguards handed her an ivory cigarette holder and lit a fire.
-Meanwhile Yamada opens a bottle of cognac and pours it into a wine glass.
+        o "Would you like some yourself? On the house."
+        ry "Thank you, Madame Ozaki but I don't drink."
+        o "Well you're still quite the sourpuss aren't you. Working for the mafia and yet you still try your best to stay clean, I'm more surprised you're still clean up until now."
+        o "Either way, I called you here today for some . . . fortune telling."
+        ry "Of course, give me a minute."
 
-Kei: "Would you like some yourself? On the house."
-Ryouhei: "Thank you, Madame Ozaki but I don't drink."
-Kei: "Well you're still quite the sourpuss aren't you. Working for the mafia and yet you still try your best to stay clean, I'm more surprised you're still clean up until now."
-Kei: "Either way, I called you here today for some . . . fortune telling."
-Ryouhei: "Of course, give me a minute."
+        "I took off the pendant around my neck, handing it to her bodyguard, Yamada."
+        "Slowly he held the jewel in the middle in front of Madame Ozaki's eyes."
+        "In a flash, Madame Ozaki looked overwhelmed."
 
-I took off the pendant around my neck, handing it to her bodyguard, Yamada.
-Slowly he held the jewel in the middle in front of Madame Ozaki's eyes.
-In a flash, Madame Ozaki looked overwhelmed.
+        o "Something has changed, Sakaguchi tell me why it changed!"
+        ry "W . . . what? What's the matter?"
+        o: "Last time it showed that after I have taken control of Kabuki-chou that I will live up to the age of 89."
+        o: "Now why does it show that I will die in two months time!"
+        o: "Tell me, Sakaguchi!"
 
-Kei: "Something has changed, Sakaguchi tell me why it changed!"
-Ryouhei: "W . . . what? What's the matter?"
-Kei: "Last time it showed that after I have taken control of Kabuki-chou that I will live up to the age of 89."
-Kei: "Now why does it show that I will die in two months time!"
-Kei: "Tell me, Sakaguchi!"
+        # TODO have an angry expression for ozaki chan
 
-After Madame Ozaki shouted, the lively bar turned silent.
-I felt the stare of a hundred pairs of eyes.
-Inhale.
-Exhale.
-This is why I dislike being in Upper Shinjuku.
+        "After Madame Ozaki shouted, the lively bar turned silent."
+        "I felt the stare of a hundred pairs of eyes."
+        "Inhale."
+        "Exhale."
+        "This is why I dislike being in Upper Shinjuku."
 
-Kei: "I know that your Talent always tells the truth, but how did I get killed by some low henchmen from another clan!"
+        o "I know that your Talent always tells the truth, but how did I get killed by some low henchmen from another clan!"
 
-Madame Ozaki slammed her glass onto the table, breaking the cup.
+        "Madame Ozaki slammed her glass onto the table, breaking the cup."
 
-Ryouhei: "I guess uhh . . . "
-Ryouhei: ". . . can you tell me what happened right before you died."
-Kei: "Then why don't you look at it yourself?!"
-Ryouhei: "I cannot see other people's visions . . . and I do not know of any plans from the other clans."
-Kei: "Then explain how your Talent predicted something wrong."
+        ry "I guess uhh . . . "
+        ry ". . . can you tell me what happened right before you died."
+        o "Then why don't you look at it yourself?!"
+        ry "I cannot see other people's visions . . . and I do not know of any plans from the other clans."
+        o "Then explain how your Talent predicted something wrong."
 
-Kei’s eyes stare me down like daggers
-Her bodyguards look equally frustrated.
+        "Kei’s eyes stare me down like daggers"
+        "Her bodyguards look equally frustrated."
 
-Kei: "Explain!"
+        o "Explain!"
 
-I leaned my body forwards, twiddling my thumbs.
-I could only think, think what may have happened to cause such a major change.
+        "I leaned my body forwards, twiddling my thumbs."
+        "I could only think, think what may have happened to cause such a major change."
 
-Ryouhei: "Maybe it's because you took control of Kabuki-chou."
-Kei: "Haaa?"
-Ryouhei: "Because Samsara accounts for changes in the world, every major deviation results in a new prediction."
-Ryouhei: "Maybe because you gained control of Kabuki-chou, the other clans are now seeking to take it back from you."
-Ryouhei: "The prediction did not account for the other clans planning to kill you. Because those plans did not exist before you gained control of Kabuki-chou"
-Kei: "Then what if I decided to not be in Kabuki-chou?"
+        ry "Maybe it's because you took control of Kabuki-chou."
+        o "Haaa?"
+        ry "Because Samsara accounts for changes in the world, every major deviation results in a new prediction."
+        o "Maybe because you gained control of Kabuki-chou, the other clans are now seeking to take it back from you."
+        ry "The prediction did not account for the other clans planning to kill you. Because those plans did not exist before you gained control of Kabuki-chou"
+        o "Then what if I decided to not be in Kabuki-chou?"
 
-Yamada hands over Samsara back to Madame Ozaki.
-Madame Ozaki held the pendant close to her eye and watched.
+        "Yamada hands over Samsara back to Madame Ozaki."
+        "Madame Ozaki held the pendant close to her eye and watched."
 
-Kei: "62 years old, that seems better than two months. I suppose I should stay in my headquarters knowing that they might kill me."
-Kei: "Yamada, Murasaki. Tell the guards to safeguard my office."
+        o "62 years old, that seems better than two months. I suppose I should stay in my headquarters knowing that they might kill me."
+        o "Yamada, Murasaki. Tell the guards to safeguard my office."
 
-The two of the bodyguards nodded.
-Though this may seem like a rare occurrence, there is a reason why I sometimes feel like abandoning this profession.
-These leaders are always one step away from death.
-Samsara is able to see through that, but because I own the Talent I'm also the one to blame.
+        "The two of the bodyguards nodded."
+        "Though this may seem like a rare occurrence, there is a reason why I sometimes feel like abandoning this profession."
+        "These leaders are always one step away from death."
+        "Samsara is able to see through that, but because I own the Talent I'm also the one to blame."
 
-Kei: "I appreciate your work, Mr. Sakaguchi. Without you I might have died too early."
-Ryouhei: "A.. ah. No worries."
-Kei: "I'll pay you the usual alright, 50,000 yen?"
-Ryouhei: "Alright, thank you Madame Ozaki"
-
-[Transition to Upper Shinjuku]
+        o "I appreciate your work, Mr. Sakaguchi. Without you I might have died too early."
+        ry "A.. ah. No worries."
+        o "I'll pay you the usual alright, 50,000 yen?"
+        ry "Alright, thank you Madame Ozaki"
+        hide ozaki_kei happy
+label uppershinjuku
+#[Transition to Upper Shinjuku]
+scene bg shinjuku
+with fade
 I exhaled . . . thank God this job is over.
 Thankfully, despite her temper, Madame Ozaki is a well paying client
 Even if things don't go her way at all times, I'm still able to reason with her.
