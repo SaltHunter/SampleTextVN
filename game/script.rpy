@@ -27,6 +27,9 @@ define cr = Character("Crowd")
 $ flag_1 = False
 $ gift = ""
 
+# Intro narration init goes here.
+init:
+    $ narrator = Character(None, kind=nvl)
 # The game starts here.
 
 label start:
@@ -42,6 +45,7 @@ label start:
     "With no government, the cities came under control of criminal organizations."
     "And in the center of it all, a Freelance Fortune Teller. A man who can show the future to these crime lords."
     "This is the story of Sakaguchi Ryouhei."
+    nvl clear
 jump day_1
 
 label day_1:
