@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 463: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
-    r "Ahhhh, I'm beat."
-    ^
+File "game/script.rpy", line 98: expected statement.
+    nvl 
+       ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Aug 13 09:07:52 2021
+Fri Aug 13 20:47:58 2021

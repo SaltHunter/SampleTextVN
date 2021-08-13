@@ -28,8 +28,11 @@ $ flag_1 = False
 $ gift = ""
 
 # Intro narration init goes here.
-init:
-    $ narrator = Character(None, kind=nvl)
+define n = Character(None,what_xalign=0.5, #Centers text within the window
+                    window_xalign=0.5, #Centers the window horizontally
+                    window_yalign=0.5, #Centers the window vertically
+                    what_text_align=0.5, #Centers text within the window, just in case
+                    kind=nvl)
 # The game starts here.
 
 label start:
@@ -38,13 +41,14 @@ label start:
     $ reimi_pts = 0
     # Intro Narration 
     # TODO format it...
-    "The world ended 20 years ago."
-    "A great disaster known as the great rising razed the cities of the world. Now most of the population live in island cities."
-    "One of these cities is Shinjuku, a shining beacon of decadence amidst the endless seas."
-    "Mankind also discovered the full extent of their powers, the people of Shinjuku call it Talent. An extension of the physical which allows people to go beyond their physical limits."
-    "With no government, the cities came under control of criminal organizations."
-    "And in the center of it all, a Freelance Fortune Teller. A man who can show the future to these crime lords."
-    "This is the story of Sakaguchi Ryouhei."
+    nvl clear
+    n "The world ended 20 years ago."
+    n "A great disaster known as the great rising razed the cities of the world. Now most of the population live in island cities."
+    n "One of these cities is Shinjuku, a shining beacon of decadence amidst the endless seas."
+    n "Mankind also discovered the full extent of their powers, the people of Shinjuku call it Talent. An extension of the physical which allows people to go beyond their physical limits."
+    n "With no government, the cities came under control of criminal organizations."
+    n "And in the center of it all, a Freelance Fortune Teller. A man who can show the future to these crime lords."
+    n "This is the story of Sakaguchi Ryouhei."
     nvl clear
 jump day_1
 
@@ -54,9 +58,6 @@ label day_1:
 
     #[A/N Setting: ryouhei’s room]
     scene bg room 
-    with fade
-
-    show ryouhei_happy
     with fade
     
     ry "Mnghh..."
@@ -90,11 +91,11 @@ label day_1:
     ry "Mm, thank you as well."
 
     ry "Ahh. Another day, another job huh."
-    hide ryouhei_happy
 
 
-        # TODO reformat this as monolog that showsa nd scrolls down something something.
-        # For all theese "monlogue bricks"
+    # TODO reformat this as monolog that showsa nd scrolls down something something.
+    # For all theese "monlogue bricks"
+    
     "For the past few years of my life, I've been stuck within this loop of living."
     "A constant state of being awake and not trying at all."
     "To best describe it, I'm living for the sake of living. I'm on autopilot I suppose."
@@ -115,6 +116,7 @@ label day_1:
     "At the end of the day, I'm only a pawn for them."
     "I cannot die because they do not let me."
     "But at the same time I cannot live because they rely on me."
+    
 
     ry "I'll be off."
 
