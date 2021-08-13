@@ -182,189 +182,190 @@ label barlabel:
 
     show ozaki_kei happy
     #Question, mending di address si ozaki kei jd Ozaki, Kei ato Ozaki Kei?
-        w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
-        ry "A... Ah, yes. Good to meet you again, Madame Ozaki."
-        o "As per last time you showed me that I will take control of Kabuki-chou, which thankfully happened as per your prediction. Now I'd like to ask you for some . . . extra favors."
+    w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
+    ry "A... Ah, yes. Good to meet you again, Madame Ozaki."
+    o "As per last time you showed me that I will take control of Kabuki-chou, which thankfully happened as per your prediction. Now I'd like to ask you for some . . . extra favors."
 
-        "Another one of her bodyguards handed her an ivory cigarette holder and lit a fire."
-        "Meanwhile Yamada opens a bottle of cognac and pours it into a wine glass."
+    "Another one of her bodyguards handed her an ivory cigarette holder and lit a fire."
+    "Meanwhile Yamada opens a bottle of cognac and pours it into a wine glass."
 
-        o "Would you like some yourself? On the house."
-        ry "Thank you, Madame Ozaki but I don't drink."
-        o "Well you're still quite the sourpuss aren't you. Working for the mafia and yet you still try your best to stay clean, I'm more surprised you're still clean up until now."
-        o "Either way, I called you here today for some . . . fortune telling."
-        ry "Of course, give me a minute."
+    o "Would you like some yourself? On the house."
+    ry "Thank you, Madame Ozaki but I don't drink."
+    o "Well you're still quite the sourpuss aren't you. Working for the mafia and yet you still try your best to stay clean, I'm more surprised you're still clean up until now."
+    o "Either way, I called you here today for some . . . fortune telling."
+    ry "Of course, give me a minute."
 
-        "I took off the pendant around my neck, handing it to her bodyguard, Yamada."
-        "Slowly he held the jewel in the middle in front of Madame Ozaki's eyes."
-        "In a flash, Madame Ozaki looked overwhelmed."
+    "I took off the pendant around my neck, handing it to her bodyguard, Yamada."
+    "Slowly he held the jewel in the middle in front of Madame Ozaki's eyes."
+    "In a flash, Madame Ozaki looked overwhelmed."
 
-        o "Something has changed, Sakaguchi tell me why it changed!"
-        ry "W . . . what? What's the matter?"
-        o: "Last time it showed that after I have taken control of Kabuki-chou that I will live up to the age of 89."
-        o: "Now why does it show that I will die in two months time!"
-        o: "Tell me, Sakaguchi!"
+    o "Something has changed, Sakaguchi tell me why it changed!"
+    ry "W . . . what? What's the matter?"
+    o "Last time it showed that after I have taken control of Kabuki-chou that I will live up to the age of 89."
+    o "Now why does it show that I will die in two months time!"
+    o "Tell me, Sakaguchi!"
 
         # TODO have an angry expression for ozaki chan
 
-        "After Madame Ozaki shouted, the lively bar turned silent."
-        "I felt the stare of a hundred pairs of eyes."
-        "Inhale."
-        "Exhale."
-        "This is why I dislike being in Upper Shinjuku."
+    "After Madame Ozaki shouted, the lively bar turned silent."
+    "I felt the stare of a hundred pairs of eyes."
+    "Inhale."
+    "Exhale."
+    "This is why I dislike being in Upper Shinjuku."
 
-        o "I know that your Talent always tells the truth, but how did I get killed by some low henchmen from another clan!"
+    o "I know that your Talent always tells the truth, but how did I get killed by some low henchmen from another clan!"
 
-        "Madame Ozaki slammed her glass onto the table, breaking the cup."
+    "Madame Ozaki slammed her glass onto the table, breaking the cup."
 
-        ry "I guess uhh . . . "
-        ry ". . . can you tell me what happened right before you died."
-        o "Then why don't you look at it yourself?!"
-        ry "I cannot see other people's visions . . . and I do not know of any plans from the other clans."
-        o "Then explain how your Talent predicted something wrong."
+    ry "I guess uhh . . . "
+    ry ". . . can you tell me what happened right before you died."
+    o "Then why don't you look at it yourself?!"
+    ry "I cannot see other people's visions . . . and I do not know of any plans from the other clans."
+    o "Then explain how your Talent predicted something wrong."
 
-        "Kei’s eyes stare me down like daggers"
-        "Her bodyguards look equally frustrated."
+    "Kei’s eyes stare me down like daggers"
+    "Her bodyguards look equally frustrated."
 
-        o "Explain!"
+    o "Explain!"
 
-        "I leaned my body forwards, twiddling my thumbs."
-        "I could only think, think what may have happened to cause such a major change."
+    "I leaned my body forwards, twiddling my thumbs."
+    "I could only think, think what may have happened to cause such a major change."
 
-        ry "Maybe it's because you took control of Kabuki-chou."
-        o "Haaa?"
-        ry "Because Samsara accounts for changes in the world, every major deviation results in a new prediction."
-        o "Maybe because you gained control of Kabuki-chou, the other clans are now seeking to take it back from you."
-        ry "The prediction did not account for the other clans planning to kill you. Because those plans did not exist before you gained control of Kabuki-chou"
-        o "Then what if I decided to not be in Kabuki-chou?"
+    ry "Maybe it's because you took control of Kabuki-chou."
+    o "Haaa?"
+    ry "Because Samsara accounts for changes in the world, every major deviation results in a new prediction."
+    o "Maybe because you gained control of Kabuki-chou, the other clans are now seeking to take it back from you."
+    ry "The prediction did not account for the other clans planning to kill you. Because those plans did not exist before you gained control of Kabuki-chou"
+    o "Then what if I decided to not be in Kabuki-chou?"
 
-        "Yamada hands over Samsara back to Madame Ozaki."
-        "Madame Ozaki held the pendant close to her eye and watched."
+    "Yamada hands over Samsara back to Madame Ozaki."
+    "Madame Ozaki held the pendant close to her eye and watched."
 
-        o "62 years old, that seems better than two months. I suppose I should stay in my headquarters knowing that they might kill me."
-        o "Yamada, Murasaki. Tell the guards to safeguard my office."
+    o "62 years old, that seems better than two months. I suppose I should stay in my headquarters knowing that they might kill me."
+    o "Yamada, Murasaki. Tell the guards to safeguard my office."
 
-        "The two of the bodyguards nodded."
-        "Though this may seem like a rare occurrence, there is a reason why I sometimes feel like abandoning this profession."
-        "These leaders are always one step away from death."
-        "Samsara is able to see through that, but because I own the Talent I'm also the one to blame."
+    "The two of the bodyguards nodded."
+    "Though this may seem like a rare occurrence, there is a reason why I sometimes feel like abandoning this profession."
+    "These leaders are always one step away from death."
+    "Samsara is able to see through that, but because I own the Talent I'm also the one to blame."
 
-        o "I appreciate your work, Mr. Sakaguchi. Without you I might have died too early."
-        ry "A.. ah. No worries."
-        o "I'll pay you the usual alright, 50,000 yen?"
-        ry "Alright, thank you Madame Ozaki"
-        hide ozaki_kei happy
+    o "I appreciate your work, Mr. Sakaguchi. Without you I might have died too early."
+    ry "A.. ah. No worries."
+    o "I'll pay you the usual alright, 50,000 yen?"
+    ry "Alright, thank you Madame Ozaki"
+    hide ozaki_kei happy
 label uppershinjuku:
 #[Transition to Upper Shinjuku]
 # Question, scenes here would be izakaya outside? shinjuku? or what? how are we going to transition this?
-scene bg bar_outdoor
-with fade
-        "I exhaled . . . thank God this job is over."
-        "Thankfully, despite her temper, Madame Ozaki is a well paying client"
-        "Even if things don't go her way at all times, I'm still able to reason with her."
-        "It's something at least."
-        "She handed me the money in a bag and Yamada returned Samsara to me."
+    scene bg bar_outdoor
+    with fade
+    "I exhaled . . . thank God this job is over."
+    "Thankfully, despite her temper, Madame Ozaki is a well paying client"
+    "Even if things don't go her way at all times, I'm still able to reason with her."
+    "It's something at least."
+    "She handed me the money in a bag and Yamada returned Samsara to me."
 
-        o "Don't spend it all in one place, Mr. Sakaguchi. Pardon my temper."
-        ry "Thank you, Madame Ozaki."
+    o "Don't spend it all in one place, Mr. Sakaguchi. Pardon my temper."
+    ry "Thank you, Madame Ozaki."
 # Tentative Transition to shinjuku Background
-scene bg shinjuku
-with fade
-        "As soon as she handed over the money, I quickly left the bar."
-        "Just as I stepped out of the place, my phone started to ring."
-        "Looking at the contact name, it's Reimi."
-        "I could only exhale and pick it up."
+    scene bg shinjuku
+    with fade
+    "As soon as she handed over the money, I quickly left the bar."
+    "Just as I stepped out of the place, my phone started to ring."
+    "Looking at the contact name, it's Reimi."
+    "I could only exhale and pick it up."
 
-        r "OI RYOU-CHAN!"
-        ry "Y-yes?"
-        r "I got off early, let's go to that parlor now!"
-        ry "Well, I'm near Kabuki-chou right now, where is the parlor at?"
-        r "Harajuku. Can you make it on time?"
-        ru "I'll probably go borrow a scooter, give me 30 minutes alright?"
-        r "If you're not here in 30 you're buying me an extra scoop alright!"
-        r "Ehehehe, I'm just kidding."
-        ry "I just got paid, so I can get you that if you want."
-        r "E-eh? Well then, I'll be waiting for you."
+    r "OI RYOU-CHAN!"
+    ry "Y-yes?"
+    r "I got off early, let's go to that parlor now!"
+    ry "Well, I'm near Kabuki-chou right now, where is the parlor at?"
+    r "Harajuku. Can you make it on time?"
+    ru "I'll probably go borrow a scooter, give me 30 minutes alright?"
+    r "If you're not here in 30 you're buying me an extra scoop alright!"
+    r "Ehehehe, I'm just kidding."
+    ry "I just got paid, so I can get you that if you want."
+    r "E-eh? Well then, I'll be waiting for you."
 
-        "She turned off the call from her side"
-        "Well, next is to find a scooter rental spot. At least it's everywhere here in Upper Shinjuku."
+    "She turned off the call from her side"
+    "Well, next is to find a scooter rental spot. At least it's everywhere here in Upper Shinjuku."
 
 # TODO make this a title card format?
-scene black
-with fade
+    scene black
+    with fade
 "-Title Card: 35 minutes later-"
+jump harajuku
 #[Transition to Harajuku]
+label harajuku:
+    scene bg harajuku
+    with fade
+    "Had I known . . ."
+    "Traffic was light today . . ."
+    "I would've . . ."
+    "TAKEN THE TAXI!!" with vpunch #(Screen jitter here) # TODO Screen Jitter
+    "I could only drag my own body to Harajuku, right in front of the gate there I saw her, surrounded by other folks."
+    "Reimi Yanagiwara, a professional athlete and a fellow Talent user."
+    "A famous gladiator who fights at the Shibuya Arena."
+    "I'm not surprised that someone like her is constantly surrounded by fans."
 
-scene bg harajuku
-with fade
-        "Had I known . . ."
-        "Traffic was light today . . ."
-        "I would've . . ."
-        "TAKEN THE TAXI!!" #(Screen jitter here) # TODO Screen Jitter
-        "I could only drag my own body to Harajuku, right in front of the gate there I saw her, surrounded by other folks."
-        "Reimi Yanagiwara, a professional athlete and a fellow Talent user."
-        "A famous gladiator who fights at the Shibuya Arena."
-        "I'm not surprised that someone like her is constantly surrounded by fans."
+    ry "Oi! Yanagiwara!"
+    show reimi_happy
+    with fade
 
-        ry "Oi! Yanagiwara!"
-        show reimi_happy
-        with fade
+    "She turned her heads towards me"
 
-        "She turned her heads towards me"
+    r "Ah! Ryou-chan!"
 
-        r "Ah! Ryou-chan!"
+    "Reimi launches herself towards me."
 
-        "Reimi launches herself towards me."
-
-        r "Ryou-chan! You're finally here!"
-        ry "Please, can we not use our first names here, people will get the wrong idea!"
+    r "Ryou-chan! You're finally here!"
+    ry "Please, can we not use our first names here, people will get the wrong idea!"
         # Programmer's Note: Jesus Thats a lot of characters to define
-        cr "Is he . . ."
-        cr "Reimi-chan is . . .?"
+    cr "Is he . . ."
+    cr "Reimi-chan is . . .?"
 
-        "What did I bring myself into? This woman . . ."
+    "What did I bring myself into? This woman . . ."
 
-        r "Ah, Sakaguchi I'm sorry I forgot!"
-        r "I'm sorry guys but I have to go for a bit!"
+    r "Ah, Sakaguchi I'm sorry I forgot!"
+    r "I'm sorry guys but I have to go for a bit!"
 
-        "Reimi took my hand and dragged me away into Harajuku."
+    "Reimi took my hand and dragged me away into Harajuku."
 
-        ry "You didn't tell you were busy with your fans?!"
-        r "Does it look like I can control my fans?!"
-        r "Anyway Ryou-chan, the ice cream parlor?"
-        ry "Mhm, you said you want two scoops right?"
-        r "From the price I've seen, it's not terribly expensive."
-        ry "Don't worry, price isn't an issue."
-        r "By the way, you said you got a payment just now, Ryou-chan?"
-        jump choice1
+    ry "You didn't tell you were busy with your fans?!"
+    r "Does it look like I can control my fans?!"
+    r "Anyway Ryou-chan, the ice cream parlor?"
+    ry "Mhm, you said you want two scoops right?"
+    r "From the price I've seen, it's not terribly expensive."
+    ry "Don't worry, price isn't an issue."
+    r "By the way, you said you got a payment just now, Ryou-chan?"
+    jump choice1
 
 
 menu choice1:
     "Ah, I was getting a payment for a previous job":
-            jump choicea
-            $reimi_pts += 5
+        jump choicea
+        $reimi_pts += 5
         
     "Yeah, they asked me to do some fortune telling":
-            jump choiceb
-            $reimi_pts -= 5
+        jump choiceb
+        $reimi_pts -= 5
 
 
 
 #[Choice A]
 label choicea:
-        ry "Ah, I was getting a payment for a previous job"
-        r "Hmph, I thought you were doing that fortune telling job again."
-        ry "Well, the payment was for a previous fortune telling job but, yeah."
-        r "Well, the good thing is that you're not really stuck there anymore."
-        jump commonroute
+    ry "Ah, I was getting a payment for a previous job"
+    r "Hmph, I thought you were doing that fortune telling job again."
+    ry "Well, the payment was for a previous fortune telling job but, yeah."
+    r "Well, the good thing is that you're not really stuck there anymore."
+    jump commonroute
 
 #[Choice B]
 label choiceb:
-        ry "Yeah, they asked me to do some fortune telling"
-        r "Again? I thought you said that you were thinking of stopping."
-        ry "I have to live too, you know."
-        r "Well, as long as you're safe. I really don't like you being with those people."
-        jump commonroute
+    ry "Yeah, they asked me to do some fortune telling"
+    r "Again? I thought you said that you were thinking of stopping."
+    ry "I have to live too, you know."
+    r "Well, as long as you're safe. I really don't like you being with those people."
+    jump commonroute
 
 
 #[back to normal]
@@ -457,8 +458,10 @@ label commonroute2:
 
 "-Title Card: 30 minutes later-"
 #[Transition to Reimi Room]
-scene bg reimi_room
-with fade
+jump reimi_room
+label reimi_room:
+    scene bg reimi_room
+    with fade
     r "Ahhhh, I'm beat."
 
     "Reimi shouted, immediately jumping onto her bed."
@@ -507,13 +510,13 @@ label day_2:
 
     menu choice3:
         "I'll be there but not sure if i can make it.":
-                $ reimi_pts += 5
-                $ flag_1 = True
-                jump day_2reimi
+            $ reimi_pts += 5
+            $ flag_1 = True
+            jump day_2reimi
 
         "I'm sorry but i got a job today":
-                $ reimi_pts -= 5
-                jump day_2jobs
+            $ reimi_pts -= 5
+            jump day_2jobs
 
 label day_2reimi:
     "With that fleeting promise in mind, you decide it'd be best to head over to the shibuya arena after work."
@@ -557,28 +560,28 @@ label day_3:
 
     menu choice4:
         "I should Check on reimi":
-                $ reimi_pts += 5
-                jump day_3reimi
+            $ reimi_pts += 5
+            jump day_3reimi
         
         "I should just go home":
-                $ reimi_pts -= 5
-                jump day_3home
+            $ reimi_pts -= 5
+            jump day_3home
 
 label day_3reimi:
     "3.1 I go buy some food for reimi on the way."
 
     menu foodchoice:
         "Buy Her Ramen":
-                $ gift = "ramen"
-                jump day_3continue
+            $ gift = "ramen"
+            jump day_3continue
 
         "Buy Her Onigiri":
-                $ gift = "onigiri"
-                jump day_3continue
+            $ gift = "onigiri"
+            jump day_3continue
 
         "Buy Her Curry":
-                $ gift = "curry"
-                jump day_3continue
+            $ gift = "curry"
+            jump day_3continue
 
 
 label day_3home:

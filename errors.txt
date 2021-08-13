@@ -2,25 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 185: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
-    ^
-
-File "game/script.rpy", line 262: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
-    "I exhaled . . . thank God this job is over."
-    ^
-
-File "game/script.rpy", line 273: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
-    "As soon as she handed over the money, I quickly left the bar."
-    ^
-
-File "game/script.rpy", line 300: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
-    "Had I known . . ."
-    ^
-
-File "game/script.rpy", line 462: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
+File "game/script.rpy", line 463: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
     r "Ahhhh, I'm beat."
     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Aug 10 19:16:50 2021
+Fri Aug 13 09:07:52 2021
