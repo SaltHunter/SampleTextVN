@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 98: expected statement.
-    nvl 
-       ^
+File "game/script.rpy", line 41: invalid syntax
+                        kind=nvl)
+                            ^
+
+File "game/script.rpy", line 47: invalid syntax
+                        kind=nvl)
+                            ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Aug 13 20:47:58 2021
+Sun Aug 15 14:20:34 2021

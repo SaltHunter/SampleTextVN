@@ -27,12 +27,18 @@ define cr = Character("Crowd")
 $ flag_1 = False
 $ gift = ""
 
-# Intro narration init goes here.
+# define characters that are going to have a "intro textbox"
 define n = Character(None,what_xalign=0.5, #Centers text within the window
                     window_xalign=0.5, #Centers the window horizontally
                     window_yalign=0.5, #Centers the window vertically
                     what_text_align=0.5, #Centers text within the window, just in case
                     kind=nvl)
+define ryt = Character('Ryouhei',
+                    what_color="#c8ffc8",
+                    kind=nvl)
+define rit = Character('Reimi', 
+                    what_color="#ffc0cb",
+                    kind=nvl) 
 # The game starts here.
 
 label start:
@@ -138,16 +144,19 @@ label shinjuku:
     "Be it the lower class or the upper class, everyone has blood in their hands."
     "Suddenly I felt a buzz in my pocket, a notification from my phone."
 
+    nvl clear
         # TODO, Format for text message??? otherwise its a custom scene bg
-    r "hey ryou-chan! I'll be around upper shinjuku around 12pm for lunch with a bunch of my friends."
-    r "if you want there's a new ice cream parlor opening soon, we can meet around 1 or 2pm"
+    rit "hey ryou-chan! I'll be around upper shinjuku around 12pm for lunch with a bunch of my friends."
+    rit "if you want there's a new ice cream parlor opening soon, we can meet around 1 or 2pm"
 
     "Begrudgingly, I opened my messaging app and replied"
 
-    ry "mm, i'll see if I'll be there."
+    ryt "mm, i'll see if I'll be there."
 
     "As quickly as I replied, I turned off my phone."
     ry "That woman . . ."
+
+    nvl clear
 
     "Reimi is a friend I met by chance, she lives nearby my house and coincidentally she has a Talent of her own."
     "Strangely enough, despite the bleak situation we live in, she's always able to smile."
@@ -170,7 +179,7 @@ label shinjuku:
     jump barlabel
 label barlabel:
     #[Transition to Bar Poirot]
-    scene bg Poirot
+    scene bg poirot
     with fade
     "Entering the bar, the air within was filled with smoke coming off cigarettes."
     "Murmured chatters of secrets and unknown affairs pass through my ears."
@@ -286,7 +295,7 @@ label uppershinjuku:
     r "I got off early, let's go to that parlor now!"
     ry "Well, I'm near Kabuki-chou right now, where is the parlor at?"
     r "Harajuku. Can you make it on time?"
-    ru "I'll probably go borrow a scooter, give me 30 minutes alright?"
+    ry "I'll probably go borrow a scooter, give me 30 minutes alright?"
     r "If you're not here in 30 you're buying me an extra scoop alright!"
     r "Ehehehe, I'm just kidding."
     ry "I just got paid, so I can get you that if you want."
@@ -314,7 +323,7 @@ label harajuku:
     "I'm not surprised that someone like her is constantly surrounded by fans."
 
     ry "Oi! Yanagiwara!"
-    show reimi_happy
+    show reimi happy
     with fade
 
     "She turned her heads towards me"
@@ -466,7 +475,10 @@ label commonroute2:
 #[Transition to Reimi Room]
 jump reimi_room
 label reimi_room:
-    scene bg reimi_room
+    scene bg room1
+    with fade
+
+    show reimi happy
     with fade
     r "Ahhhh, I'm beat."
 
@@ -497,6 +509,8 @@ label reimi_room:
     ry "Mhm, it might be fun honestly."
 
     #TODO transition and bg for this scene 
+    scene bg apartment out
+    with fade
     "After eating, I decided to clean up and as quickly as I arrived, I walked home alone."
     "By this point the moon was bright . . ."
     "The walk home was somber, accompanied by the chirping of birds."
