@@ -195,7 +195,10 @@ label barlabel:
     "Her eyes were sharp and judgmental, just as expected from the leader of the Ozaki Clan."
     "Her name was Ozaki Kei, queen of Kabuki-chou."
 
-    show ozaki_kei happy
+    show ozaki_kei happy:
+        xalign 0.0
+        yalign -5
+        zoom 5
     #Question, mending di address si ozaki kei jd Ozaki, Kei ato Ozaki Kei?
     w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
     ry "A... Ah, yes. Good to meet you again, Madame Ozaki."
@@ -272,7 +275,7 @@ label barlabel:
 label uppershinjuku:
 #[Transition to Upper Shinjuku]
 # Question, scenes here would be izakaya outside? shinjuku? or what? how are we going to transition this?
-    scene bg bar_outdoor
+    scene bg baroutdoor
     with fade
     "I exhaled . . . thank God this job is over."
     "Thankfully, despite her temper, Madame Ozaki is a well paying client"
