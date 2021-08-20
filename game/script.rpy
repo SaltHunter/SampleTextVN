@@ -196,9 +196,7 @@ label barlabel:
     "Her name was Ozaki Kei, queen of Kabuki-chou."
 
     show ozaki_kei happy:
-        xalign 0.0
-        yalign -5
-        zoom 5
+    
     #Question, mending di address si ozaki kei jd Ozaki, Kei ato Ozaki Kei?
     w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
     ry "A... Ah, yes. Good to meet you again, Madame Ozaki."
