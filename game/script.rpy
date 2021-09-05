@@ -14,6 +14,7 @@ define n = Character ("Naotora")
 define th = Character ("Tatsuhiro")
 define ih = Character ("Isurugi Hirotsu")
 define yh = Character ("Hibana Yosano")
+define h = Character("Haruo Yosano")
 
 
 # Definition of Misc characters go here
@@ -25,6 +26,7 @@ define cr = Character("Crowd")
 define yh = ("Yosano Group Henchman #1")
 define yh1 = ("Yosano Group Henchman")
 define yh2 = ("Yosano Group Henchmen")
+define x = ("???")
 
 # Definition of Flags go here.
 
@@ -579,10 +581,12 @@ label day_2:
     rit "everyone has backstage pass already dumbass"
 
     menu arenachoice (nvl = True):
-        "Go to the Arena"
+        "Go to the Arena":
+        $ choice = "1"
         jump choice1
-
-        "Don't Go to the Arena"
+        
+        "Don't Go to the Arena":
+        $ choice = "2"
         jump choice2
 
 
@@ -657,106 +661,115 @@ label day2commonroute:
 
     ry "Of course. That should be rather simple."
 
-I begin the standard fortune telling procedure.
+    "I begin the standard fortune telling procedure."
 
-Ryouhei Sakaguchi: “Now, if you could please put your hands around this necklace.”
+    ry "Now, if you could please put your hands around this necklace."
 
----
+#---
 
-Hibana Yosano: “Well, it does seem that things are fine as is.”
-Hibana Yosano: “You can pick up your payment when you leave the building, I believe the hourly rate is still the same?”
-Ryouhei Sakaguchi: “Ah, actually I'd rather not charge you the full amount, we've barely gone past 30 minutes.”
-Ryouhei Sakaguchi: “Wouldn't feel right.”
-Hibana Yosano: “Ah. Then why not do small talks?”
-Ryouhei Sakaguchi: “It's okay, I'll take-”
-Hibana Yosano: “I insist, young man.”
-Ryouhei Sakaguchi: “...Fine. Do note this means I'll charge by the hour.”
-Hibana Yosano: “Naturally.”
-Hibana Yosano: “Now, how has life been treating you so far?”
-Ryouhei Sakaguchi: “So-so I guess. Can't complain.”
-Hibana Yosano: “I'd imagine being the go-to fortune teller for the city's underworld would pay well.”
-Hibana Yosano: “Have you considered moving out of the undercity? After all, it is within your means.”
-Ryouhei Sakaguchi: “I like the neighborhood. Can't see myself moving up like that, honestly.”
-Hibana Yosano: “Ah, yes, good neighbors. Can't really buy those I suppose.”
-Hibana Yosano: “Speaking of neighbors.”
-Here we go. What has she got up her sleeve now?
-Hibana Yosano: “Is it not unfortunate that one must have such unruly neighbors?”
-Hibana Yosano: “The collapse of the constabulary last year was bad enough, but now this frightful wave of violence.”
-Hibana Yosano: “Open street fighting in Kabuki-Cho, gunning down of yakuza members in broad daylight in view of the public…”
-Ryouhei Sakaguchi: “I don't think it's my place to comment on such matters.”
-Hibana Yosano: “Surely someone in the middle of all this cannot afford to have no opinion?”
-Ryouhei Sakaguchi: “I'll try my best, madame.”
-Hibana Yosano : “Even if he were to, hypothetically, be called by one of the main actors of this play, who isn't quite sure if she'll make it through with her head on her shoulder?”
-Ryouhei Sakaguchi: “...”
+    yh "Well, it does seem that things are fine as is."
+    yh "You can pick up your payment when you leave the building, I believe the hourly rate is still the same?"
+    ry "Ah, actually I'd rather not charge you the full amount, we've barely gone past 30 minutes."
+    ry "Wouldn't feel right."
+    yh "Ah. Then why not do small talks?"
+    ry "It's okay, I'll take-"
+    yh "I insist, young man."
+    ry "...Fine. Do note this means I'll charge by the hour."
+    yh "Naturally."
+    yh "Now, how has life been treating you so far?"
+    ry "So-so I guess. Can't complain."
+    yh "I'd imagine being the go-to fortune teller for the city's underworld would pay well."
+    yh "Have you considered moving out of the undercity? After all, it is within your means."
+    ry "I like the neighborhood. Can't see myself moving up like that, honestly."
+    yh "Ah, yes, good neighbors. Can't really buy those I suppose."
+    yh "Speaking of neighbors."
+    "Here we go. What has she got up her sleeve now?"
+    yh "Is it not unfortunate that one must have such unruly neighbors?"
+    yh "The collapse of the constabulary last year was bad enough, but now this frightful wave of violence."
+    yh "Open street fighting in Kabuki-Cho, gunning down of yakuza members in broad daylight in view of the public…"
+    ry "I don't think it's my place to comment on such matters."
+    yh "Surely someone in the middle of all this cannot afford to have no opinion?"
+    ry "I'll try my best, madame."
+    yh "Even if he were to, hypothetically, be called by one of the main actors of this play, who isn't quite sure if she'll make it through with her head on her shoulder?"
+    ry "..."
 
-How'd she know?!
-Calm down, Ryouhei. Deep internal breathes. More bark than bite.
+    "How'd she know?!"
+    "Calm down, Ryouhei. Deep internal breathes. More bark than bite."
 
-Ryouhei Sakaguchi: “*Especially* if that were the case, madame.”
-Hibana Yosano: “A man of integrity. Not a common sight.”
+    ry "*Especially* if that were the case, madame."
+    yh "A man of integrity. Not a common sight."
 
-She proceeded to pull something out of the obi of her red floral kimono.
-...A gun?
-Pointed at my head?!
+    "She proceeded to pull something out of the obi of her red floral kimono."
+    "...A gun?"
+    "Pointed at my head?!"
 
-Hibana Yosano: “This is hypothetical, of course, but would that same integrity stay with a sword pointed at your neck?”
+    yh "This is hypothetical, of course, but would that same integrity stay with a sword pointed at your neck?"
 
-A hypothetical sword yes, but a very real gun!
+    "A hypothetical sword yes, but a very real gun!"
 
-Hibana Yosano: “Now, what did that disgrace ask? And how did you answer her?”
-Ryouhei Sakaguchi: “I-I can't possibl-”
+    yh "Now, what did that disgrace ask? And how did you answer her?"
+    ry "I-I can't possibl-"
 
-She proceeded to put her finger on the trigger, and smiled.
+    "She proceeded to put her finger on the trigger, and smiled."
 
-Hibana Yosano: “Don't make this hard on either of us, master fortune-teller, getting blood out of velvet is such an inconvenience.”
-Ryouhei Sakaguchi: “Y-you're asking me to breach the confidence clients enjoy, and I can-”
-*Bang*
+    yh "Don't make this hard on either of us, master fortune-teller, getting blood out of velvet is such an inconvenience."
+    ry "Y-you're asking me to breach the confidence clients enjoy, and I can-"
+    "*Bang*"
 
-Hibana Yosano let out an amused hum. And I am still alive.
-It was now obvious that the shot was a blank, but I damn near shat myself right then and there.
+    "Hibana Yosano let out an amused hum. And I am still alive."
+    "It was now obvious that the shot was a blank, but I damn near shat myself right then and there."
 
-Hibana Yosano: “Now this is a rarity.”
-Hibana Yosano: “Perhaps the faith the Old Cabal placed upon you was not misplaced at all.”
+    yh "Now this is a rarity."
+    yh "Perhaps the faith the Old Cabal placed upon you was not misplaced at all."
 
----
+#---
 
-The rest of the time was spent in actual small talks. Or attempts to.
-I cannot even hold a conversation after a gun is pointed at my head.
+    "he rest of the time was spent in actual small talks. Or attempts to."
+    "I cannot even hold a conversation after a gun is pointed at my head."
 
-[A/N Door opening noises]
+#[A/N Door opening noises]
 
-???: “Mother, it's time for your division with the Council President.”
-Hibana Yosano: “Oh my, is it that late already?”
-Hibana Yosano: “This has been a pleasant hour, master fortune-teller, but I must take my leave.”
-Hibana Yosano: “If you do not mind, my son Haruo will escort you out.”
-Ryouhei Sakaguchi: “That would be fine.”
-Hibana Yosano: “Splendid. Haruo, if you would do the honors?”
-Haruo Yosano: “Of course. If I may.”
+    x "Mother, it's time for your division with the Council President."
+    yh "Oh my, is it that late already?"
+    yh "This has been a pleasant hour, master fortune-teller, but I must take my leave."
+    yh "If you do not mind, my son Haruo will escort you out."
+    ry "That would be fine."
+    yh "Splendid. Haruo, if you would do the honors?"
+    h "Of course. If I may."
 
-I allow myself to be blindfolded yet again.
-At least they’re respectful about it. Can’t say the same about the other clients.
----
+    "I allow myself to be blindfolded yet again."
+    "At least they’re respectful about it. Can’t say the same about the other clients."
+#---
 
-Haruo Yosano: “Here is your phone, and here is your payment.”
-Ryouhei Sakaguchi: “...You didn’t put a bug or anything on this right?”
-Haruo Yosano: “Heh, of course not. If anything I’d actually encourage you to have it checked just in case.”
-Haruo Yosano: “My parents try their best to keep their words, and in your case they’ve seen that respect is mutual.”
-Ryouhei Sakaguchi: “Good to know.”
+    h "Here is your phone, and here is your payment."
+    ry "...You didn’t put a bug or anything on this right?"
+    h "Heh, of course not. If anything I’d actually encourage you to have it checked just in case."
+    h "My parents try their best to keep their words, and in your case they’ve seen that respect is mutual."
+    ry "Good to know."
 
 
-As I accepted the enveloped payment, I am tempted
- to ask how the Yosanos found out what the Ozakis asked.
-But I figured that would be asking for trouble, so I kept my mouth shut.
+    "As I accepted the enveloped payment, I am tempted"
+    "to ask how the Yosanos found out what the Ozakis asked."
+    "But I figured that would be asking for trouble, so I kept my mouth shut."
 
-Haruo Yosano: “Well, pleasure doing business with you, master fortune-teller.”
-Ryouhei Sakaguchi: “Please, just Ryouhei is fine. We’re the same age, give or take, from the looks of it anyways.”
-Haruo Yosano: “Of course, Ryouhei-san. Of course, I must now take my leave.”
-Ryouhei Sakaguchi: “Sure, I’ll also be on my way.”
----
+    h "Well, pleasure doing business with you, master fortune-teller."
+    ry "Please, just Ryouhei is fine. We’re the same age, give or take, from the looks of it anyways."
+    h "Of course, Ryouhei-san. Of course, I must now take my leave."
+    ry "Sure, I’ll also be on my way."
 
-[A/N Start of Alt A Backstage or Night City CG]
+    if choice == "1" :  
+        jump menua
 
-Ryouhei Sakaguchi: “Great fight.”
+    else:
+        jump menub
+
+    
+#---
+
+label menua
+#[A/N Start of Alt A Backstage or Night City CG]
+
+    ry "Great fight."
 Reimi Yanagiwara: “I aim to entertain.” (A/N Smug)
 Reimi Yanagiwara: “By the way, I have someone I want to introduce you to”.
 Reimi Yanagiwara: “Ta-daaaa! Meet my friend and colleague, Takeshi.
@@ -854,7 +867,7 @@ This is going to be a long night...
 
 [A/N End of Alt A]
 
-[A/N Start of Alt B, night in front of house BG]
+# [A/N Start of Alt B, night in front of house BG]
 I unlock the door to my house, its familiar clicking a comforting noise. 
 The job I’m doing pays well, but by all that is holy sometimes it feels like it’s not worth it.
 A gun pointed at my head and a blank fired at me for 400 yen an hour...
