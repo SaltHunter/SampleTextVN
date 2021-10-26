@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 41: invalid syntax
-                        kind=nvl)
-                            ^
-
-File "game/script.rpy", line 47: invalid syntax
-                        kind=nvl)
-                            ^
+File "game/script.rpy", line 777: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+    Takeshi Fukuchi: “Go ahead, I won't bite.”
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Aug 15 14:20:34 2021
+Sun Sep 05 08:21:58 2021

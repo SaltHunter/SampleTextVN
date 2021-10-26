@@ -15,6 +15,7 @@ define th = Character ("Tatsuhiro")
 define ih = Character ("Isurugi Hirotsu")
 define yh = Character ("Hibana Yosano")
 define h = Character("Haruo Yosano")
+define tk = Character("Takeshi")
 
 
 # Definition of Misc characters go here
@@ -770,38 +771,39 @@ label menua
 #[A/N Start of Alt A Backstage or Night City CG]
 
     ry "Great fight."
-Reimi Yanagiwara: “I aim to entertain.” (A/N Smug)
-Reimi Yanagiwara: “By the way, I have someone I want to introduce you to”.
-Reimi Yanagiwara: “Ta-daaaa! Meet my friend and colleague, Takeshi.
-Takeshi Fukuchi: “Pleasure to meet you. Reimi seems to have taken a liking to you.”
+    r "I aim to entertain." #(A/N Smug)
+    r "By the way, I have someone I want to introduce you to."
+    r "Ta-daaaa! Meet my friend and colleague, Takeshi."
+    tk "Pleasure to meet you. Reimi seems to have taken a liking to you."
 
-Guy’s massive. I wouldn’t be surprised if he is ex-constable.
-Gotta make a living I guess.
+    "Guy’s massive. I wouldn’t be surprised if he is ex-constable."
+    "Gotta make a living I guess."
 
-Takeshi Fukuchi: “You told me this guy can tell your fortune?”
-Reimi Yanagiwara: “Never misses too, guy’s got talent.
 
-Well, capital T Talent, yes, but no need to advertise that.
+    tk "You told me this guy can tell your fortune?"
+    r "Never misses too, guy’s got talent."
 
-Ryouhei Sakaguchi: “Putting that aside, is this okay?”
-Reimi Yanagiwara: “I wouldn’t have invited you if it wasn’t okay.”
-Ryouhei Sakaguchi: “Not that. You guys have to keep the act in public, right?”
-Reimi Yanagiwara: “First time I heard of it.”
-Takeshi Fukuchi: “Old school too. Where’d you find this relic?”
-Reimi Yanagiwara: “The lower town is an interesting place.”
-Takeshi Fukuchi: “Can’t disagree, won’t disagree.”
-Reimi Yanagiwara: “Anyways, since today is my payday-”
-Ryouhei Sakaguchi: “Mine too as a matter of fact.”
-Reimi Yanagiwara: “Shhh. I’m paying, and I’m hankering for some izakaya yakitori.”
+    "Well, capital T Talent, yes, but no need to advertise that."
 
-I shrugged. I wasn’t about to turn down a free dinner, after all.
+    ry "Putting that aside, is this okay?"
+    r "I wouldn’t have invited you if it wasn’t okay."
+    ry "Not that. You guys have to keep the act in public, right?"
+    r "First time I heard of it."
+    tk "Old school too. Where’d you find this relic?"
+    r "The lower town is an interesting place."
+    tk "Can’t disagree, won’t disagree."
+    r "Anyways, since today is my payday-"
+    ry "Mine too as a matter of fact."
+    r "Shhh. I’m paying, and I’m hankering for some izakaya yakitori."
 
-Takeshi Fukuchi: “Well, I guess you’re paying for some glasses too?”
-Reimi Yanagiwara: “Sure, throw it in, I’m feeling generous today.”
+    "I shrugged. I wasn’t about to turn down a free dinner, after all."
 
----
+    tk "Well, I guess you’re paying for some glasses too?"
+    r "Sure, throw it in, I’m feeling generous today."
 
-[A/N Izakaya CG]
+#---
+
+#[A/N Izakaya CG]
 
 Reimi Yanagiwara: “Man, I’m full.”
 Reimi Yanagiwara: “I'm gonna go worship the Porcelain Throne for a bit, you boys don't kiss each other while I’m away.”
@@ -865,9 +867,9 @@ Reimi Yanagiwara: “O-hoooo? Tickle torture? I like the way you think.”
 Gulp....
 This is going to be a long night...
 
-[A/N End of Alt A]
+#[A/N End of Alt A]
 
-# [A/N Start of Alt B, night in front of house BG]
+#[A/N Start of Alt B, night in front of house BG]
 I unlock the door to my house, its familiar clicking a comforting noise. 
 The job I’m doing pays well, but by all that is holy sometimes it feels like it’s not worth it.
 A gun pointed at my head and a blank fired at me for 400 yen an hour...
