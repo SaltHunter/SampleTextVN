@@ -6,7 +6,7 @@
 
 # Definition of Important-Ish Characters go here
 
-define r = Character("Reimu")
+define r = Character("Reimi")
 define ry = Character("Ryouhei")
 define t = Character("Tatsuki")
 define o = Character("Kei")
@@ -815,98 +815,103 @@ label menub:
     ry "So, Takeshi. Can I call you that, by the way?"
     tk "Go ahead, I won't bite."
     ry "Cool. I’m actually kinda curious, you don’t seem like the type to actually start his career with ring fights."
-Takeshi Fukuchi: “Well, you don’t look like the type that can afford being around this neighborhood.”
-Ryouhei Sakaguchi: “Fair. You first or me first?”
-Takeshi Fukuchi: “Janken?”
-Ryouhei Sakaguchi: “Janken.”
+    tk "Well, you don’t look like the type that can afford being around this neighborhood."
+    ry "Fair. You first or me first?"
+    tk "Janken?"
+    ry "Janken."
+    jump izakayab
 
----
+# implemented a jump for fade effect 
+#---
 
-Takeshi Fukuchi: “Really?”
-Ryouhei Sakaguchi: “Hey, at least it pays well enough.”
-Takeshi Fukuchi: “Your soul’s being sucked completely straight out of your body though.”
-Takeshi Fukuchi: “I know those types.”
-Takeshi Fukuchi: “Well I guess that makes for a good place for me to make an entrance.”
-Takeshi: “As you can probably guess, I was an undertown cop. 13th Precinct.”
-Ryouhei Sakaguchi: “Isn’t that the worst part of town?”
-Takeshi Fukuchi: “Yep. Every Yakuza deal gone wrong, every gangland murder, it all happens there.”
-Takeshi Fukuchi: “Well, it used to happen there. After I got pushed out of the Constabulary, Council Hall started pulling out of the undertown.”
-Takeshi Fukuchi: “Said something about fiscal responsibility and budgetary deficits, but that sounds like a buncha bull to me.”
+label izakayab:
+    tk "Really?"
+    ry "Hey, at least it pays well enough."
+    tk "Your soul’s being sucked completely straight out of your body though."
+    tk "I know those types."
+    tk "Well I guess that makes for a good place for me to make an entrance."
+    tk "As you can probably guess, I was an undertown cop. 13th Precinct."
+    ry "Isn’t that the worst part of town?"
+    tk "Yep. Every Yakuza deal gone wrong, every gangland murder, it all happens there."
+    tk "Well, it used to happen there. After I got pushed out of the Constabulary, Council Hall started pulling out of the undertown."
+    tk "Said something about fiscal responsibility and budgetary deficits, but that sounds like a buncha bull to me."
 
-Well, it kind of isn’t. The city always had a smuggling problem and I’d guess it put the budget into a death spiral.
-And put quite a few constables out of jobs from the looks of it.
+    "Well, it kind of isn’t. The city always had a smuggling problem and I’d guess it put the budget into a death spiral."
+    "And put quite a few constables out of jobs from the looks of it."
 
-Takeshi Fukuchi: “I’m one of the luckier ones, honestly.”
-Takeshi Fukuchi: “When that happens, there’s three things that can happen to you.”
-Takeshi Fukuchi: “You get reassigned to uptown, you work with the Yakuza, or you end up homeless.”
-Ryouhei Sakaguchi: “You’re still somewhere between alternatives two and three though.”
-Takeshi Fukuchi: “Nice, I like a sharp guy.” [A/N Sincere]
-Takeshi Fukuchi: “Yes and no. This gig is paying enough and I also sell stuff on the side.”
-Takeshi Fukuchi: “Nothing hot. Just vegetables I grow on my own time.”
-Ryouhei Sakaguchi: “You know, from your looks I was half expecting guns or something hotter.”
-Takeshi Fukuchi: “Well, I can sell you that too but then I’ll have to arrest you.”
-Takeshi Fukuchi: “That said I’ve got some old world chilis growing if that’s what you’re talking about.”
+    tk "I’m one of the luckier ones, honestly."
+    tk "When that happens, there’s three things that can happen to you."
+    tk "You get reassigned to uptown, you work with the Yakuza, or you end up homeless."
+    ry "You’re still somewhere between alternatives two and three though."
+    tk "Nice, I like a sharp guy." #[A/N Sincere]
+    tk "Yes and no. This gig is paying enough and I also sell stuff on the side."
+    tk "Nothing hot. Just vegetables I grow on my own time."
+    ry "You know, from your looks I was half expecting guns or something hotter."
+    tk "Well, I can sell you that too but then I’ll have to arrest you."
+    tk "That said I’ve got some old world chilis growing if that’s what you’re talking about."
 
-We both laughed at the pun.
+    "We both laughed at the pun."
 
-Reimi Yanagiwara: “What are you guys laughing about?”
-Ryouhei Sakaguchi: “Nothing, nothing hot.”
-Reimi Yanagiwara: “Takeshi?”
-Takeshi Fukuchi: “I plead my right to remain silent”.
-Reimi Yanagiwara: “Grrrhhhh-”
-Ryouhei Sakaguchi: “I don’t think you can handle the spice, Reimi.”
+    r "What are you guys laughing about?"
+    ry "Nothing, nothing hot."
+    r "Takeshi?"
+    tk "I plead my right to remain silent"
+    r "Grrrhhhh-"
+    ry "I don’t think you can handle the spice, Reimi."
 
-Takeshi started to snort again, suppressing his laughter.
+    "Takeshi started to snort again, suppressing his laughter."
 
-Reimi Yanagiwara: “Seriously you two-”
-Ryouhei Sakaguchi: “Man I better bail before this miko bonks me.”
-Ryouhei Sakaguchi: “See you around Take-”
+    r "Seriously you two-"
+    ry "Man I better bail before this miko bonks me."
+    ry "See you around Take-"
 
-Takeshi locked my arms before I even got to stand.
+    # TODO ADD SPECIAL EFFECTS HERE SMH
 
-Takeshi Fukuchi: “If you wanna find out what he said, you really should find his spot.”
-Reimi Yanagiwara: “O-hoooo? Tickle torture? I like the way you think.”
+    "Takeshi locked my arms before I even got to stand."
+
+    tk "If you wanna find out what he said, you really should find his spot."
+    r "O-hoooo? Tickle torture? I like the way you think."
 
 
-Gulp....
-This is going to be a long night...
+    "Gulp...."
+    "This is going to be a long night..."
 
 #[A/N End of Alt A]
 
-#arcadechoice b
+label arcadechoiceb:
 
 #[A/N Start of Alt B, night in front of house BG]
-I unlock the door to my house, its familiar clicking a comforting noise. 
-The job I’m doing pays well, but by all that is holy sometimes it feels like it’s not worth it.
-A gun pointed at my head and a blank fired at me for 400 yen an hour...
-I make more than 20 times an hour most other workers in this god-forsaken city do, but how much does hazard pay go?
-Every day, a creeping feeling of emptiness keeps creeping into the back of my mind.
-What do I want? Where do I want to be? Why am I still here?
-Maybe that damn viper is right, I should move up.
-But then again...
+    "I unlock the door to my house, its familiar clicking a comforting noise." 
+    "The job I’m doing pays well, but by all that is holy sometimes it feels like it’s not worth it."
+    "A gun pointed at my head and a blank fired at me for 400 yen an hour..."
+    "I make more than 20 times an hour most other workers in this god-forsaken city do, but how much does hazard pay go?"
+    "Every day, a creeping feeling of emptiness keeps creeping into the back of my mind."
+    "What do I want? Where do I want to be? Why am I still here?"
+    "Maybe that damn viper is right, I should move up."
+    "But then again..."
 
-The vibrations of my phone in my pocket pulled me out of my thoughts.
-Reimi again. This time with a picture, her with a massive guy, eating together in an izakaya.
+    "The vibrations of my phone in my pocket pulled me out of my thoughts."
+    "Reimi again. This time with a picture, her with a massive guy, eating together in an izakaya."
 
-Reimi Yanagiwara: [hows work?]
-Reimi Yanagiwara: [jealous yet?]
+    rit "hows work?"
+    rit "jealous yet?"
 
-Urghhhh...
+    "Urghhhh..."
 
-Ryouhei Sakaguchi: [Really not in the mood for this, Reimi.]
-Reimi Yanagiwara: [jeez they treat you that badly?]
-Ryouhei Sakaguchi: [If only you knew.]
-Ryouhei Sakaguchi: [Not in the mood to tell a story. Talk to me tomorrow.]
-Reimi Yanagiwara: [ew prickly]
-Reimi Yanagiwara: [sure good night sweet prince <3]
+    ryt "Really not in the mood for this, Reimi."
+    rit "jeez they treat you that badly?"
+    ryt "If only you knew."
+    ryt "Not in the mood to tell a story. Talk to me tomorrow."
+    rit "ew prickly"
+    rit "sure good night sweet prince <3]"
 
-I swear…
-I’d kill for great coworkers.
-Sigh...
-I’ll just take a bath, make something and go to sleep.
-It’s not like tomorrow’s going to be any worse.
-Kind of hard topping having a gun pushed up to your head at work.
-[A/N End of Alt B]
+    "I swear…"
+    "I’d kill for great coworkers."
+    "Sigh..."
+    "I’ll just take a bath, make something and go to sleep."
+    "It’s not like tomorrow’s going to be any worse."
+    "Kind of hard topping having a gun pushed up to your head at work."
+#[A/N End of Alt B]
 
 
 
