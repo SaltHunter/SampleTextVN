@@ -580,29 +580,31 @@ label day_2:
     rit "what am i supposed to do with this ticket for the shinjuku arena fight later this afternoon then"
     ryt "I don't know, you have lots of friends, you'll figure something out."
     rit "everyone has backstage pass already dumbass"
+    jump arenachoice
 
-    menu arenachoice (nvl = True):
+    menu arenachoice:
         "Go to the Arena":
-        $ choice = "1"
-        jump choice1
+            $ choice = "1"
+            jump choice1arena
         
         "Don't Go to the Arena":
-        $ choice = "2"
-        jump choice2
+            $ choice = "2"
+            jump choice2arena
 
 
-label choice1
+label choice1arena:
     ryt "Fine, I'll go."
     rit "cool see you after the fight you can pick up the ticket at the usual spot"
 jump day2commonroute
 #[A/N End Alt A]
 
 
-
+label choice2arena:
     ryt "Just write an ofuda on it or something."
     ryt "You actually are a miko, right?"
     rit "ha ha very funny"
     rit "maybe i'll even attach it to your head see if that fix your personality or something"
+jump day2commonroute
 
 #[A/N End Alt B]
 
@@ -762,12 +764,12 @@ label day2commonroute:
         jump menua
 
     else:
-        jump menub
+        jump choice2arena
 
     
 #---
 
-label menua
+label menua:
 #[A/N Start of Alt A Backstage or Night City CG]
 
     ry "Great fight."
@@ -800,11 +802,13 @@ label menua
 
     tk "Well, I guess you’re paying for some glasses too?"
     r "Sure, throw it in, I’m feeling generous today."
+    jump menub
+
+label menub:
 
 #---
 
 #[A/N Izakaya CG]
-
 Reimi Yanagiwara: “Man, I’m full.”
 Reimi Yanagiwara: “I'm gonna go worship the Porcelain Throne for a bit, you boys don't kiss each other while I’m away.”
 [A/N Shuffling boots sounds]
@@ -869,6 +873,8 @@ This is going to be a long night...
 
 #[A/N End of Alt A]
 
+#arcadechoice b
+
 #[A/N Start of Alt B, night in front of house BG]
 I unlock the door to my house, its familiar clicking a comforting noise. 
 The job I’m doing pays well, but by all that is holy sometimes it feels like it’s not worth it.
@@ -901,6 +907,7 @@ I’ll just take a bath, make something and go to sleep.
 It’s not like tomorrow’s going to be any worse.
 Kind of hard topping having a gun pushed up to your head at work.
 [A/N End of Alt B]
+
 
 
 label sleep_day2:
