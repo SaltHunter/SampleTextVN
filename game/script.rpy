@@ -759,12 +759,11 @@ label day2commonroute:
     ry "Please, just Ryouhei is fine. We’re the same age, give or take, from the looks of it anyways."
     h "Of course, Ryouhei-san. Of course, I must now take my leave."
     ry "Sure, I’ll also be on my way."
-
     if choice == "1" :  
         jump menua
 
     else:
-        jump choice2arena
+        jump choice2postarena
 
     
 #---
@@ -875,10 +874,11 @@ label izakayab:
 
     "Gulp...."
     "This is going to be a long night..."
+    jump day_3
 
 #[A/N End of Alt A]
 
-label arcadechoiceb:
+label choice2postarena:
 
 #[A/N Start of Alt B, night in front of house BG]
     "I unlock the door to my house, its familiar clicking a comforting noise." 
@@ -912,14 +912,7 @@ label arcadechoiceb:
     "It’s not like tomorrow’s going to be any worse."
     "Kind of hard topping having a gun pushed up to your head at work."
 #[A/N End of Alt B]
-
-
-
-label sleep_day2:
-    "4. I Go home to sleep."
-
-
-
+    "I sleep. hoping tomorrow would be better"
     jump day_3
 
 

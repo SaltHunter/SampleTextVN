@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 816: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-    Takeshi Fukuchi: “Go ahead, I won't bite.”
+The label choice2arena is defined twice, at
+  File "game/script.rpy", line 602 and
+  File "game/script.rpy", line 880.
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Dec 11 23:09:18 2021
+Sun Dec 12 00:39:01 2021
