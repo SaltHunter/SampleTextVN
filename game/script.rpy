@@ -813,7 +813,7 @@ label menub:
     r "I'm gonna go worship the Porcelain Throne for a bit, you boys don't kiss each other while I’m away."
 #[A/N Shuffling boots sounds]
     ry "So, Takeshi. Can I call you that, by the way?"
-    tk "Go ahead, I won't bite." "test"
+    tk "Go ahead, I won't bite." "TEST"
 Ryouhei Sakaguchi: “Cool. I’m actually kinda curious, you don’t seem like the type to actually start his career with ring fights.”
 Takeshi Fukuchi: “Well, you don’t look like the type that can afford being around this neighborhood.”
 Ryouhei Sakaguchi: “Fair. You first or me first?”
