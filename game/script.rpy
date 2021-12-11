@@ -809,11 +809,11 @@ label menub:
 #---
 
 #[A/N Izakaya CG]
-Reimi Yanagiwara: “Man, I’m full.”
-Reimi Yanagiwara: “I'm gonna go worship the Porcelain Throne for a bit, you boys don't kiss each other while I’m away.”
-[A/N Shuffling boots sounds]
-Ryouhei Sakaguchi: “So, Takeshi. Can I call you that, by the way?”
-Takeshi Fukuchi: “Go ahead, I won't bite.”
+    r "Man, I’m full."
+    r "I'm gonna go worship the Porcelain Throne for a bit, you boys don't kiss each other while I’m away."
+#[A/N Shuffling boots sounds]
+    ry "So, Takeshi. Can I call you that, by the way?"
+    tk "Go ahead, I won't bite."
 Ryouhei Sakaguchi: “Cool. I’m actually kinda curious, you don’t seem like the type to actually start his career with ring fights.”
 Takeshi Fukuchi: “Well, you don’t look like the type that can afford being around this neighborhood.”
 Ryouhei Sakaguchi: “Fair. You first or me first?”
