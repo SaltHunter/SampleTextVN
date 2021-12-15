@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-The label choice2arena is defined twice, at
-  File "game/script.rpy", line 602 and
-  File "game/script.rpy", line 880.
+File "game/script.rpy", line 1131: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+    Staff: “I agree sir, and I’m ready to receive my punishment for this, all I ask is you don't mess up my face too much, wouldn’t want my kid not recognizing his old man on his own funeral”
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Dec 12 00:39:01 2021
+Thu Dec 16 00:12:53 2021
