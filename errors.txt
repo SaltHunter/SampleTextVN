@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1131: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-    Staff: “I agree sir, and I’m ready to receive my punishment for this, all I ask is you don't mess up my face too much, wouldn’t want my kid not recognizing his old man on his own funeral”
+File "game/script.rpy", line 58: invalid syntax
+                        what_color="#ffd700",
+                                  ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Dec 16 00:12:53 2021
+Thu Dec 16 01:02:56 2021
