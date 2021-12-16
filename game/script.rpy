@@ -1062,73 +1062,79 @@ label day_3:
     ry "Which one of those instances apply to my case?"
     "Isurugi laughs and stood up from his desk making his way to the 3 beaten up staff members"
     isr "Kid, as long as you’re loyal and don’t fuck up your head is still going to be attached on your shoulders" 
-isr “Can’t say the same for these rats though” 
-Isurugi forcefully grab one of the traitors by the hair and proceeded to explain what’s about to happen
-isr “Alright listen up you maggots, you will receive disciplinary action to redeem yourself for betraying me, whether you pay with your life or not depends on you”
-Isurugi went over to his desk, started to rummage around and pulled out a handgun
-isr “I’m in a celebrating mood with Ryohei’s ‘promotion’ so I’m feeling a little kind today, let’s hear what you gotta say”
-Rookie: “I...I plead g-guilty for what I’ve done sir , I see no way outta this mess so I’m coming clean”
-isr “I see, since what you did was something minor and your rank was not high enough to cause real problems, I’m gonna give you a choice”
-Rookie: “Oh! T-thank you sir, I’ll do anything you ask”
-isr “Well then, here’s my offer, you walk out from this life and you get punished severely, or you stay and work to the bone and get off with a lighter punishment, and let me tell you working here won’t get any easier”
-A brief silence befell the room, all eyes were on the rookie anticipating what he will say next 
-the rest of us know all too well that what Isurugi said was true, this line of work will never get easier
-Rookie: “I-- I will d-dedicate myself to you sir, I’ll w-work hard to atone for my sins”
-isr “Stupid choice rookie, but i respect it, go find Gotou about your punishment ”
-Rookie: “Y-yes Sir”
-The rookie stood up and left, leaving only 2 more awaiting their judgment
-isr “What about the rest of you? Got anything to say?”
-Traitor: “Nothing sir...”
-isr “Not gonna say anything about you being a mole?”
-Traitor: “Nope, not gonna add anything you don’t know sir, not even regret”
-Traitor: “I was just doing my job, i’ve pledged loyalty to my employer and that’s that”
-isr “I like your work ethic, shame you ain’t workin for me”
-isr “Seeing I’m on good terms with the big 3, that would make your employer a small timer in Shinjuku”
-isr “Small timers ain’t worth my time and yours, so you wanna work for me or not?”
-Traitor: “No sir, I’ve pledged loyalty and that’s final”
-isr “Well, I’ll take that as verbal confirmation that you betrayed me”
-isr “At least this next part will be easier for me, and since I’m feeling generous I’ll let you off if you manage to keep your consciousness”
-Isurugi loaded his gun, he twirled and fiddled with it for a while, you could see the traitor’s face getting paler with every twirl of Isurugi’s gun
-Until Isurugi finally stopped and looked me dead in the eye with his gun pointed right at me
-ry “U-uh Sir? I believe the gun is ---”
-*BANG!!!*
-AHHHHHHH!!!
-I flinched and instinctively shouted only to realize I was completely fine and i wasn’t the one who shouted
-As adrenaline started rushing I could see Isurugi still pointing the gun at me
-isr “Burn this image in your mind, just in case you get funny ideas about betrayal”
-Isurugi winked at me right after finishing that sentence and quickly averted his attention to the traitor writhing in pain
-isr “Congrats, you survived the first shot, you’re one of the few who didn’t pass out right away”
-Traitor: “A-ah, WHAT THE FUCK DID YOU DO”
-isr “As simple as using my ability, to put simply I can control bullets”
-isr “I redirected the bullet headed towards Ryohei straight to one of your intercostal space”
-Traitor: “Iii-intercostal space?”
-isr “The space between your ribs”
-I lightly pressed one of said spaces with my thumbs, and quickly discomfort grew, I could only shudder at the thought of a bullet passing through
-isr “Do your best to keep your consciousness if you want to live”
-*BANG!!!*
-Traitor: “AAAAHHHH, FUCK!”
-isr “Still conscious eh? Well not to worry you got about 23 spaces available and i got about 7 bullets left”
-isr “You know what they say, Third times a charm”
-*BANG!!!*
-This time no scream was heard, just silence as the traitor slumped over
-isr “Ah well, I really thought he was gonna survive until the 3rd bullet at least”
-isr “Tatsuki, wake the man up, and no need for manners”
-Tatsuki nodded and proceeded to kick the traitor square on his injured ribs, and without delay the traitor was jolted awake
-Traitor: “Who-wha, where…?”
-isr “Rise and shine snake, you lost your consciousness, you know what that means” 
-isr “You lose your life”
-Traitor: “W-wwait, sir just, let’s not do anything rash here ”
-isr “Funny, the only rash thing done today was your cocky attitude”
-Traitor: “P-pplease g-give me another chance”
-isr “Tatsuki, take care of him please”
-The traitor only kept begging for his life harder as Isurugi muttered those words, but no amount of begging and grovelling changed Isurugi’s mind
-Tatsuki seems to show no hesitation in drawing his sword and in one fluid motion he swung his sword and sheathed it
-The cut was clean, so clean in fact the traitor’s head slid off the base of his neck, the room went from cries and wails to instant silence
-*Click*
-isr “Be a dear for me and ask Gotou to reserve a table for one please”
-Receptionist: “A-an actual table sir?? or the---”
-isr “Yes, the clean-up kind”
-Receptionist: “A-aah right a-away sir”
+    isr "Can’t say the same for these rats though" 
+    "Isurugi forcefully grab one of the traitors by the hair and proceeded to explain what’s about to happen"
+    isr "Alright listen up you maggots, you will receive disciplinary action to redeem yourself for betraying me, whether you pay with your life or not depends on you"
+    "Isurugi went over to his desk, started to rummage around and pulled out a handgun"
+    isr "I’m in a celebrating mood with Ryohei’s ‘promotion’ so I’m feeling a little kind today, let’s hear what you gotta say"
+    rk "I...I plead g-guilty for what I’ve done sir , I see no way outta this mess so I’m coming clean"
+    isr "I see, since what you did was something minor and your rank was not high enough to cause real problems, I’m gonna give you a choice."
+    rk "Oh! T-thank you sir, I’ll do anything you ask"
+    isr "Well then, here’s my offer, you walk out from this life and you get punished severely, or you stay and work to the bone and get off with a lighter punishment, and let me tell you working here won’t get any easier"
+    "A brief silence befell the room, all eyes were on the rookie anticipating what he will say next"   
+    "the rest of us know all too well that what Isurugi said was true, this line of work will never get easier"
+    rk "I-- I will d-dedicate myself to you sir, I’ll w-work hard to atone for my sins"
+    isr "Stupid choice rookie, but i respect it, go find Gotou about your punishment"
+    rk "Y-yes Sir"
+    "The rookie stood up and left, leaving only 2 more awaiting their judgment"
+    isr "What about the rest of you? Got anything to say?"
+    tt "Nothing sir..."
+    isr "Not gonna say anything about you being a mole?"
+    tt "Nope, not gonna add anything you don’t know sir, not even regret"
+    tt "I was just doing my job, i’ve pledged loyalty to my employer and that’s that"
+    isr "I like your work ethic, shame you ain’t workin for me"
+    isr "Seeing I’m on good terms with the big 3, that would make your employer a small timer in Shinjuku" # The Big 3? or the Rest of the Big 3?
+    isr "Small timers ain’t worth my time and yours, so you wanna work for me or not?"
+    tt "No sir, I’ve pledged loyalty and that’s final"
+    isr "Well, I’ll take that as verbal confirmation that you betrayed me"
+    isr "At least this next part will be easier for me, and since I’m feeling generous I’ll let you off if you manage to keep your consciousness"
+    "Isurugi loaded his gun, he twirled and fiddled with it for a while, you could see the traitor’s face getting paler with every twirl of Isurugi’s gun"
+    # TODO Isurugi "Gunsprite"
+    "Until Isurugi finally stopped and looked me dead in the eye with his gun pointed right at me"
+    ry "U-uh Sir? I believe the gun is ---"
+    scene black
+    with fade
+    # Insert Gun SFX here
+    "*BANG!!!*"
+    "AHHHHHHH!!!"
+    scene bg shinjuku
+    with fade
+    "I flinched and instinctively shouted only to realize I was completely fine and i wasn’t the one who shouted"
+    "As adrenaline started rushing I could see Isurugi still pointing the gun at me"
+    isr "Burn this image in your mind, just in case you get funny ideas about betrayal"
+    "Isurugi winked at me right after finishing that sentence and quickly averted his attention to the traitor writhing in pain"
+    isr "Congrats, you survived the first shot, you’re one of the few who didn’t pass out right away"
+    tt "A-ah, WHAT THE FUCK DID YOU DO"
+    isr "As simple as using my ability, to put simply I can control bullets"
+    isr "I redirected the bullet headed towards Ryohei straight to one of your intercostal space"
+    tt "Iii-intercostal space?"
+    isr "The space between your ribs"
+    "I lightly pressed one of said spaces with my thumbs, and quickly discomfort grew, I could only shudder at the thought of a bullet passing through"
+    isr "Do your best to keep your consciousness if you want to live"
+    "*BANG!!!*"
+    tt "AAAAHHHH, FUCK!"
+    isr "Still conscious eh? Well not to worry you got about 23 spaces available and i got about 7 bullets left"
+    isr "You know what they say, Third time's the charm"
+    "*BANG!!!*"
+    "This time no scream was heard, just silence as the traitor slumped over"
+    isr "Ah well, I really thought he was gonna survive until the 3rd bullet at least"
+    isr "Tatsuki, wake the man up, and no need for manners"
+    "Tatsuki nodded and proceeded to kick the traitor square on his injured ribs, and without delay the traitor was jolted awake"
+    tt "Who-wha, where…?"
+    isr "Rise and shine snake, you lost your consciousness, you know what that means" 
+    isr "You lose your life" #Omae wa MOU shindeiru lmao
+    tt "W-wwait, sir just, let’s not do anything rash here"
+    isr "Funny, the only rash thing done today was your cocky attitude"
+    tt "P-pplease g-give me another chance"
+    isr "Tatsuki, take care of him please"
+    "The traitor only kept begging for his life harder as Isurugi muttered those words, but no amount of begging and grovelling changed Isurugi’s mind"
+    "Tatsuki seems to show no hesitation in drawing his sword and in one fluid motion he swung his sword and sheathed it"
+    "The cut was clean, so clean in fact the traitor’s head slid off the base of his neck, the room went from cries and wails to instant silence"
+    "*Click*"
+    isr "Be a dear for me and ask Gotou to reserve a table for one please"
+    rc "A-an actual table sir?? or the---"
+    isr "Yes, the clean-up kind"
+    rc "A-aah right a-away sir"
 isr “I’ll tell you this since you’re still new, I’ll reserve an actual table if I mention an actual place, got it? ” 
 Receptionist: “L-loud and clear sir”
 isr “Great, we’re set then, don’t forget about telling Gotou”
