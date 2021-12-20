@@ -45,19 +45,19 @@ $ gift = ""
 
 # define characters that are going to have a "intro textbox"
 define n = Character(None,what_xalign=0.5, #Centers text within the window
-                    window_xalign=0.5, #Centers the window horizontally
-                    window_yalign=0.5, #Centers the window vertically
-                    what_text_align=0.5, #Centers text within the window, just in case
-                    kind=nvl)
+    window_xalign=0.5, #Centers the window horizontally
+    window_yalign=0.5, #Centers the window vertically
+    what_text_align=0.5, #Centers text within the window, just in case
+    kind=nvl)
 define ryt = Character('Ryouhei',
-                    what_color="#c8ffc8",
-                    kind=nvl)
+    what_color="#c8ffc8",
+    kind=nvl)
 define rit = Character('Reimi', 
-                    what_color="#ffc0cb",
-                    kind=nvl) 
+    what_color="#ffc0cb",
+    kind=nvl) 
 define ist = Character('Isurugi Hirotsu',
-                    what_color="#ffd700",
-                    kind=nvl)
+    what_color="#ffd700",
+    kind=nvl)
 # The game starts here.
 
 label start:
@@ -937,8 +937,8 @@ label choice2postarena:
     jump day_3
 
 label day_3:
-   #VN Day 3
-    #[Setting: Ryohei’s Apartment Bedroom]
+    #VN Day 3
+    # [Setting: Ryohei’s Apartment Bedroom]
     # Alarm Clock Sounds 
     "I woke up to the sound of my phone’s alarm"
     ry "Ah, it seems morning has come yet again"
