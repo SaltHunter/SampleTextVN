@@ -68,7 +68,7 @@ label start:
 
     # Formatting used:
     # https://renpy.org/doc/html/dialogue.html#monologue-mode
-    
+
     nvl clear
     n """
     The world ended 20 years ago.
@@ -105,7 +105,7 @@ label day_1:
 
     "The phone continued to ring, with not much way to avoid it, I quickly picked it up, despite my half-asleep state."
 
-    ry "Good Morning, this is Sakaguchi Ryouhei, sorry I just woke up . . .how can I help you today?"
+    ry "Good Morning, this is Sakaguchi Ryouhei. Sorry, I just woke up... How can I help you today?"
         
     cl "Good morning Mr. Sakaguchi, my name is Yamada Tatsuhiro representing Madame Ozaki."
 
@@ -119,67 +119,118 @@ label day_1:
 
     ry "T-today?!"
 
-    th "Yes today."
+    th "Yes, today."
         
     ry "A-alright then, I'll be there in a bit."
         
-    th "Very well then, I will inform Madame Ozaki about this thank you for your time Mr. Sakaguchi."
+    th "Very well then, I will inform Madame Ozaki about this. Thank you for your time Mr. Sakaguchi."
 
     ry "Mm, thank you as well."
 
     ry "Ahh. Another day, another job huh."
 
 
-    # TODO reformat this as monolog that showsa nd scrolls down something something.
+    # TODO reformat this as monolog that shows and scrolls down something something.
     # For all theese "monlogue bricks"
+
+    # So, you want this to be like the credit text?
+    # In any case, I'll apply monologue mode for now.
+    # You should definitely look into it, it makes scripting monologue less tedious,
+    # although it adds many more lines.
+    # - Tea
     
-    "For the past few years of my life, I've been stuck within this loop of living."
-    "A constant state of being awake and not trying at all."
-    "To best describe it, I'm living for the sake of living. I'm on autopilot I suppose."
-    "But to my knowledge, there's nothing much that I can do about it."
-    "Since I was a child, I've been abandoned here in the streets of Shinjuku."
-    "I've always been afraid of death, afraid of the unknown."
-    "But through some incredible accident, I found out that I had special powers, what people call Talent."
-    "A pendant with a large emerald in its center, I call it 'Samsara'."
-    "Those who see through the gem are able to see their future"
-    "As long as they follow what they see, then their future will not change."
-    "In a way for myself and others, this is a way to feel safe about our future."
-    "And to the lords of Shinjuku, a way to keep control of their empires."
-    "Though things like that are rather trivial to me."
-    "Each passing day is no different, a type of mutual understanding between the houses and myself."
-    "Because I cannot control what Samsara shows, it helps these lords prepare against their inevitable deaths."
-    "Between the three houses of Shinjuku, The Ozakis, The Hirotsus and The Yosanos. I'm one of the few who can freely roam between their territories."
-    "Those who seek to hurt me will eventually be killed by one of the three houses."
-    "At the end of the day, I'm only a pawn for them."
-    "I cannot die because they do not let me."
-    "But at the same time I cannot live because they rely on me."
+    """
+    For the past few years of my life, I've been stuck within this loop of living.
     
+    A constant state of being awake and not trying at all.
+    
+    To best describe it, I'm living for the sake of living. I'm on autopilot I suppose.
+    
+    But to my knowledge, there's nothing much that I can do about it.
+    
+    Since I was a child, I've been abandoned here in the streets of Shinjuku.
+
+    I've always been afraid of death, afraid of the unknown.
+
+    But through some incredible accident, I found out that I had special powers, what people call Talent.
+
+    A pendant with a large emerald in its center, I call it 'Samsara'.
+
+    Those who see through the gem are able to see their future
+
+    As long as they follow what they see, then their future will not change.
+
+    In a way for myself and others, this is a way to feel safe about our future.
+
+    And to the lords of Shinjuku, a way to keep control of their empires.
+
+    Though things like that are rather trivial to me.
+
+    Each passing day is no different, a type of mutual understanding between the houses and myself.
+
+    Because I cannot control what Samsara shows, it helps these lords prepare against their inevitable deaths.
+
+    Between the three houses of Shinjuku, The Ozakis, The Hirotsus and The Yosanos. I'm one of the few who can freely roam between their territories.
+
+    Those who seek to hurt me will eventually be killed by one of the three houses.
+
+    At the end of the day, I'm only a pawn for them.
+
+    I cannot die because they do not let me.
+
+    But at the same time I cannot live because they rely on me.
+    """
 
     ry "I'll be off."
 
-#[A/N Opening door sound]
-# TODO, Opening Door SFX???
+    #[A/N Opening door sound]
+    # TODO, Opening Door SFX???
     "Who am I kidding, I live alone anyway."
     "Despite making more than enough money to live, I cannot live in the decadent territory known as Upper Shinjuku."
+    
     jump shinjuku
 
-label shinjuku:
-#[A/N Transition to Upper Shinjuku]
+    # Why the heck do you have to use jump when the label to jump to is literally in the next line?
+    # You're not going back to that label anyway, right?
+    # If so, then making another label would be redundant.
+    # Although, you should look up global and local labels, I'm sure it'll help with longer VNs.
+    # And it'd likely save you headaches in the long run if you insist for the labels to stay.
+    # https://renpy.org/doc/html/label.html#label-statement
+    # - Tea
+
+label .shinjuku:
+    #[A/N Transition to Upper Shinjuku]
     scene bg shinjuku
     with fade
-    "That place corrupts people; wealth and greed fuel those who live there."
-    "Just last week the Ozaki clan toppled a famous host club, murdered the owner and pinned him to the signboard by stabbing a katana through his heart."
-    "But as I said, fighting back would mean that I'll be next on their hit list."
-    "Living in lower Shinjuku is not any better either."
-    "It's a den of scum and villainy, eventually everyone has to kill here at some point."
-    "Be it the lower class or the upper class, everyone has blood in their hands."
-    "Suddenly I felt a buzz in my pocket, a notification from my phone."
+
+    """
+    That place corrupts people; Wealth and greed fuel those who live there.
+    
+    Just last week, the Ozaki clan toppled a famous host club, murdered the owner 
+    and pinned him to the signboard by stabbing a katana through his heart.
+
+    But as I said, fighting back would mean that I'll be next on their hit list.
+
+    Living in lower Shinjuku is not any better either.
+
+    It's a den of scum and villainy, eventually everyone has to kill here at some point.
+
+    Be it the lower class or the upper class, everyone has blood in their hands.
+    
+    Suddenly I felt a buzz in my pocket, a notification from my phone.
+    """
 
     nvl clear
-        # TODO, Format for text message??? otherwise its a custom scene bg
+    # TODO, Format for text message??? otherwise its a custom scene bg
+
+    # This should help:
+    # https://renpy.org/doc/html/gui.html#nvl
+    # - Tea
+
     rit "hey ryou-chan! I'll be around upper shinjuku around 12pm for lunch with a bunch of my friends."
     rit "if you want there's a new ice cream parlor opening soon, we can meet around 1 or 2pm"
 
+    # May want to cycle between text message and non-text message display
     "Begrudgingly, I opened my messaging app and replied"
 
     ryt "mm, i'll see if I'll be there."
@@ -189,13 +240,21 @@ label shinjuku:
 
     nvl clear
 
-    "Reimi is a friend I met by chance, she lives nearby my house and coincidentally she has a Talent of her own."
-    "Strangely enough, despite the bleak situation we live in, she's always able to smile."
-    "Sometimes I wonder if I could be like her, but having company in misery is better than nothing."
-    "At the very least, I have something to look forward to after this job."
-    "I quickly hopped onto a tram heading towards Upper Shinjuku."
-    "Upper Shinjuku and Lower Shinjuku is divided by a tram system connecting the two."
-    "To get to the upper city, you need to take"
+    """
+    Reimi is a friend I met by chance, she lives nearby my house and coincidentally she has a Talent of her own.
+
+    Strangely enough, despite the bleak situation we live in, she's always able to smile.
+
+    Sometimes I wonder if I could be like her, but having company in misery is better than nothing.
+
+    At the very least, I have something to look forward to after this job.
+
+    I quickly hopped onto a tram heading towards Upper Shinjuku.
+
+    Upper Shinjuku and Lower Shinjuku is divided by a tram system connecting the two.
+
+    To get to the upper city, you need to take
+    """
 
     to "We have arrived at the Southern Terrace, next stop is Kabuki-chou"
 
@@ -203,20 +262,33 @@ label shinjuku:
 
     ry "Keep the change."
 
-    "Upper Shinjuku is a whole different world to me, open spaces and the tall skyscrapers it is truly a sight to behold."
-    "Unlike the crummy Lower part of town, there is air to breathe here, a sense of unattainable freedom."
-    "Checking the clock on my phone, it's only 9:30AM. I still have 30 minutes free."
-    "Though Reimi is not around, I guess I should just head towards Bar Poirot."
+    """
+    Upper Shinjuku is a whole different world to me, open spaces and the tall skyscrapers it is truly a sight to behold.
+
+    Unlike the crummy Lower part of town, there is air to breathe here, a sense of unattainable freedom.
+
+    Checking the clock on my phone, it's only 9:30AM. I still have 30 minutes free.
+
+    Though Reimi is not around, I guess I should just head towards Bar Poirot.
+    """
+
     jump barlabel
-label barlabel:
+
+label .barlabel:
     #[Transition to Bar Poirot]
     scene bg poirot
     with fade
-    "Entering the bar, the air within was filled with smoke coming off cigarettes."
-    "Murmured chatters of secrets and unknown affairs pass through my ears."
-    "It felt warm, but in the sense that you were in hell, boiled alive with the sinners."
-    "As I powered through the tobacco-scented air, there sat a woman and two of her bodyguards."
-    "The man to her right stood up and approached me."
+    """
+    Entering the bar, the air within was filled with smoke coming off cigarettes.
+    
+    Murmured chatters of secrets and unknown affairs pass through my ears.
+    
+    It felt warm, but in the sense that you were in hell, boiled alive with the sinners.
+
+    As I powered through the tobacco-scented air, there sat a woman and two of her bodyguards.
+
+    The man to her right stood up and approached me.
+    """
 
     th "Good morning, my name is Yamada Tatsuhiro. I assume you are Sakaguchi Ryouhei."
     ry "Yes, yes I am."
@@ -231,14 +303,16 @@ label barlabel:
     #Question, mending di address si ozaki kei jd Ozaki, Kei ato Ozaki Kei?
     w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
     ry "A... Ah, yes. Good to meet you again, Madame Ozaki."
-    o "As per last time you showed me that I will take control of Kabuki-chou, which thankfully happened as per your prediction. Now I'd like to ask you for some . . . extra favors."
+    o "As per last time you showed me that I will take control of Kabuki-chou, which thankfully happened as per your prediction. 
+    Now I'd like to ask you for some . . . extra favors."
 
     "Another one of her bodyguards handed her an ivory cigarette holder and lit a fire."
     "Meanwhile Yamada opens a bottle of cognac and pours it into a wine glass."
 
     o "Would you like some yourself? On the house."
     ry "Thank you, Madame Ozaki but I don't drink."
-    o "Well you're still quite the sourpuss aren't you. Working for the mafia and yet you still try your best to stay clean, I'm more surprised you're still clean up until now."
+    o "Well you're still quite the sourpuss aren't you. Working for the mafia and yet you still try your best to stay clean, 
+    I'm more surprised you're still clean up until now."
     o "Either way, I called you here today for some . . . fortune telling."
     ry "Of course, give me a minute."
 
@@ -282,7 +356,8 @@ label barlabel:
     o "Haaa?"
     ry "Because Samsara accounts for changes in the world, every major deviation results in a new prediction."
     o "Maybe because you gained control of Kabuki-chou, the other clans are now seeking to take it back from you."
-    ry "The prediction did not account for the other clans planning to kill you. Because those plans did not exist before you gained control of Kabuki-chou"
+    ry "The prediction did not account for the other clans planning to kill you. 
+    Because those plans did not exist before you gained control of Kabuki-chou"
     o "Then what if I decided to not be in Kabuki-chou?"
 
     "Yamada hands over Samsara back to Madame Ozaki."
@@ -301,7 +376,8 @@ label barlabel:
     o "I'll pay you the usual alright, 50,000 yen?"
     ry "Alright, thank you Madame Ozaki"
     hide ozaki_kei happy
-label uppershinjuku:
+
+label .uppershinjuku:
 #[Transition to Upper Shinjuku]
 # Question, scenes here would be izakaya outside? shinjuku? or what? how are we going to transition this?
     scene bg baroutdoor
