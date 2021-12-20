@@ -64,22 +64,34 @@ label start:
     scene black 
     with fade
     $ reimi_pts = 0
-    # Intro Narration 
-    # TODO format it...
+    # Intro Narration
+
+    # Formatting used:
+    # https://renpy.org/doc/html/dialogue.html#monologue-mode
+    
     nvl clear
-    n "The world ended 20 years ago."
-    n "A great disaster known as the great rising razed the cities of the world. Now most of the population live in island cities."
-    n "One of these cities is Shinjuku, a shining beacon of decadence amidst the endless seas."
-    n "Mankind also discovered the full extent of their powers, the people of Shinjuku call it Talent. An extension of the physical which allows people to go beyond their physical limits."
-    n "With no government, the cities came under control of criminal organizations."
-    n "And in the center of it all, a Freelance Fortune Teller. A man who can show the future to these crime lords."
-    n "This is the story of Sakaguchi Ryouhei."
+    n """
+    The world ended 20 years ago.
+    
+    A great disaster known as the great rising razed the cities of the world. Now most of the population live in island cities.
+    
+    One of these cities is Shinjuku, a shining beacon of decadence amidst the endless seas.
+    
+    Mankind also discovered the full extent of their powers, the people of Shinjuku call it Talent. 
+    An extension of the physical which allows people to go beyond their physical limits.
+    
+    With no government, the cities came under control of criminal organizations.
+    
+    And in the center of it all, a Freelance Fortune Teller. A man who can show the future to these crime lords.
+    
+    This is the story of Sakaguchi Ryouhei.
+    """
     nvl clear
-jump day_1
+    jump day_1
 
 label day_1:
     # Chapter 1 begins here.
-    #Day 1
+    # Day 1
 
     #[A/N Setting: ryouhei’s room]
     scene bg room 
