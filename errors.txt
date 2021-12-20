@@ -2,10 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 58: invalid syntax
-                        what_color="#ffd700",
-                                  ^
-    
+File "game/script.rpy", line 1306: expected statement.
+    "Well eating with other people is always better the izakaya yesterday proved that, besides cup ramen ain't the healthiest, I'll buy some ingredients here and then drop by her place":
+                                                                                                                                                                                         ^
+
+File "game/script.rpy", line 1310: expected statement.
+    "I wonder how Reimi's doing after her match yesterday? I guess I'll drop by her place after buying a couple of ingredients":
+                                                                                                                               ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Dec 16 01:02:56 2021
+Mon Dec 20 23:18:50 2021

@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 879, in script
-    if flag_1 == "true":
-  File "game/script.rpy", line 879, in <module>
-    if flag_1 == "true":
-NameError: name 'flag_1' is not defined
+  File "game/script.rpy", line 1347, in script
+    jump choiceamerger
+ScriptError: could not find label 'choiceamerger'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 879, in script
-    if flag_1 == "true":
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 879, in <module>
-    if flag_1 == "true":
-NameError: name 'flag_1' is not defined
+  File "game/script.rpy", line 1347, in script
+    jump choiceamerger
+  File "C:\Renpy\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Renpy\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choiceamerger'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TitleTentative 1.0
-Wed Dec 15 23:59:00 2021
+Mon Dec 20 23:28:52 2021
