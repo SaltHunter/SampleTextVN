@@ -2,13 +2,65 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1306: expected statement.
-    "Well eating with other people is always better the izakaya yesterday proved that, besides cup ramen ain't the healthiest, I'll buy some ingredients here and then drop by her place":
-                                                                                                                                                                                         ^
+The label day_2 is defined twice, at File "game/day2.rpy", line 3:
+label day_2:
+and File "game/script.rpy", line 93:
+label day_2:
 
-File "game/script.rpy", line 1310: expected statement.
-    "I wonder how Reimi's doing after her match yesterday? I guess I'll drop by her place after buying a couple of ingredients":
-                                                                                                                               ^
 
-Ren'Py Version: Ren'Py 7.3.5.606
-Mon Dec 20 23:18:50 2021
+The label arenachoice is defined twice, at File "game/day2.rpy", line 55:
+    menu arenachoice:
+and File "game/script.rpy", line 145:
+    menu arenachoice:
+
+
+The label choice1arena is defined twice, at File "game/day2.rpy", line 65:
+label choice1arena:
+and File "game/script.rpy", line 155:
+label choice1arena:
+
+
+The label choice2arena is defined twice, at File "game/day2.rpy", line 73:
+label choice2arena:
+and File "game/script.rpy", line 163:
+label choice2arena:
+
+
+The label day2commonroute is defined twice, at File "game/day2.rpy", line 82:
+label day2commonroute:
+and File "game/script.rpy", line 172:
+label day2commonroute:
+
+
+The label menua is defined twice, at File "game/day2.rpy", line 242:
+label menua:
+and File "game/script.rpy", line 332:
+label menua:
+
+
+The label menub is defined twice, at File "game/day2.rpy", line 277:
+label menub:
+and File "game/script.rpy", line 367:
+label menub:
+
+
+The label izakayab is defined twice, at File "game/day2.rpy", line 298:
+label izakayab:
+and File "game/script.rpy", line 388:
+label izakayab:
+
+
+The label day_31 is defined twice, at File "game/day2.rpy", line 355:
+label day_31:
+and File "game/script.rpy", line 445:
+label day_31:
+
+
+The label choice2postarena is defined twice, at File "game/day2.rpy", line 359:
+label choice2postarena:
+and File "game/script.rpy", line 449:
+label choice2postarena:
+
+
+Ren'Py Version: Ren'Py 7.4.6.1693
+Wed Dec 22 19:48:31 2021

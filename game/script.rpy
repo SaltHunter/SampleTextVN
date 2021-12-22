@@ -88,401 +88,10 @@ label start:
     """
     nvl clear
     call day_1
+    call day_2
 
 
-label day_2:
-    scene bg room
-    with fade
-    # Chapter 2 begins here.
-    "I woke up slightly late this morning, resolving to take the day easy."
-    "Brushing my teeth before a breakfast of ramen and leftover bottled tea, I decide to eat on my bed and watch some early morning cartoons."
-    "The peak of decadence in this part of town, by most standards."
-    "*Knock knock*"
-    "Past tense now, I guess. Sigh..."
-    "I try to look as presentable as I can with my pajamas."
-    "Of course, not *too* presentable. Can't let them think I'm so cheap they can just knock on my door first thing in the morning."
-    "I take a deep breath, and open my front door."
-    "What greets me is three young men, sharply dressed."
-    "All three wear an armband identifying them as low ranking members of the Yosano Group."
 
-    scene bg apartouter
-    with fade
-
-    ry "Who is it?"
-    yh1 "Good morning, fortune-teller. I am here under the orders of Madame Yosano."
-    yh1 "Madame Yosano asks for your presence post haste."
-    yh1 "Transportations will be provided. We have a car waiting."
-    yh1 "Sounds like something important, alright."
-    ry "Give me 30 minutes."
-    yh1 "Understood."
-
-#---
-#[A/N Car interior BG]
-# NOTE I'll use bg shinjuku as a placeholder for now.
-    scene bg shinjuku
-    with fade
-#...
-#[A/N Ringtone]
-    "I frantically reached into my pocket for my phone and out of reflex rejected the call."
-    ry "I'm sorry, I forgot to put this damn thing on mute."
-    yh1 "That's fine, you may answer it."
-    ry "That's not what I me-"
-    yh1 "We are sworn to secrecy, if that is what's required at the moment."
-    "Sigh..."
-    "It was Reimi. Of course it was Reimi."
-    "A double serving of sigh coming right up."
-#[A/N WA ringtone or something similar]
-# Note, NVL Mode Here
-    rit ":("
-    rit "pick your damn phone jerk"
-    ryt "I'm busy."
-    rit "fine be like that"
-    rit "what am i supposed to do with this ticket for the shinjuku arena fight later this afternoon then"
-    ryt "I don't know, you have lots of friends, you'll figure something out."
-    rit "everyone has backstage pass already dumbass"
-    jump arenachoice
-
-    menu arenachoice:
-        "Go to the Arena":
-            $ choice = "1"
-            jump choice1arena
-        
-        "Don't Go to the Arena":
-            $ choice = "2"
-            jump choice2arena
-
-
-label choice1arena:
-    $ flag_1 = True
-    ryt "Fine, I'll go."
-    rit "cool see you after the fight you can pick up the ticket at the usual spot"
-jump day2commonroute
-#[A/N End Alt A]
-
-
-label choice2arena:
-    ryt "Just write an ofuda on it or something."
-    ryt "You actually are a miko, right?"
-    rit "ha ha very funny"
-    rit "maybe i'll even attach it to your head see if that fix your personality or something"
-jump day2commonroute
-
-#[A/N End Alt B]
-
-label day2commonroute:
-
-    "Never a dull moment..."
-
-#---
-    scene bg shinjuku
-    with fade
-
-    "Ichigaya."
-    "Back in the days before the catastrophe, this was a commercial center for Old Tokyo. That, and where the defenders of the old world convened. Or traded death, depending on how jaded you are."
-    "These days, it's colored more by small workshops and houses of the city's artisans, creating whatever trinkets the city's elites may want."
-    "The car stops just before Akebonobashi, where it crosses the Yasukuni-Dorei, now a canal towards the Kanda River."
-    "The Kanda River went up all the way to the hill where the Shinjuku City Council of Guilds and Neighborhood Associations complex now stands."
-    "The beating heart of the city's government, one may say."
-    "Well, that, and the Yosano Group's compound. Guess which one is more important these days?"
-    "To be sure, the Yosanos still have quite the influence and thus vested interest in the Shinjuku municipal government."
-    "One can even say the city government and the Yosanos are joined at the hips these days."
-    "But considering the breakdown in public order and the incessant gang wars, it's not wrong per se to say that the city government is filled with Yosano goons, or at least not trusted."
-    "I'm not one for politics, but I don't even remember anyone from my ward even giving lip service to the government anymore."
-
-    "One boot for another, I guess. Not much difference between those wearing a badge and those with a Kei armband."
-    "Entering the compound was a slight uphill trudge, all under the watchful eyes of the city constables, daring you to make a move."
-    "As I am about to take up the steps into the City Council building, the henchmen that have been silent for the entire journey stopped me, holding my arms."
-    yh1 "Master fortune-teller, as per standard procedure, from this point on, I must respectfully request you be blindfolded."
-    yh1 "Madame Yosano has many enemies, unfortunately, and this is simply a precautionary measure. On her behalf, I must apologize."
-    yh1 "Ah, no phones either, I'm afraid."
-
-    "I simply nodded and handed over my phone, allowing myself to be blindfolded. He then proceeded to frisk me."
-    "After that, I can feel my body being gently prodded from behind, pointing where I should walk."
-    "Not long after, I can feel the upward motions of an elevator."
-    "And then it stops. The man gently prodded me forward out of the elevator and allowed me to release my blindfold."
-    "What greeted my eyes was no other than the personal office of Hibana Yosano, one of the two heads of the Yosano Group."
-
-    yh "Ah, the fortune-teller, come, sit. I have been expecting you."
-    "And speak of the devil herself."
-    "Hibana Yosano has a fearsome reputation. The Shinjuku Council of Guilds and Neighborhood Associations was very recently an independent organization, a fourth sphere in the city."
-    "Within 2 years, that organization has been subsumed completely under the Yosano Group."
-    "Either this is something really important or this is some kind of test."
-    "And I don't know which is worse."
-    yh "Thank you for bringing the young master over, young man. Now, could you be a dear and bring some tea for him too?"
-
-    yh1 "Of course, madam." #[A/N Closing door sound]
-
-    "Cunning as a fox, word on the streets say."
-    "She doesn't look any different from any shopkeeper granny, no."
-    "But you don't hold the Council in just a couple of years without having a few tricks up your sleeve."
-
-    yh "Now, in regards to why I summoned you, next week, the city hall is organizing Obon."
-    yh "My husband would like to contribute handsomely to the endeavor."
-    yh "I was wondering if this particular course of action is an auspicious one."
-
-    "...That's it?"
-    "This isn't even in my line of work, this should be Reimi's stuff!"
-
-    ry "Of course. That should be rather simple."
-
-    "I begin the standard fortune telling procedure."
-
-    ry "Now, if you could please put your hands around this necklace."
-
-#---
-
-    yh "Well, it does seem that things are fine as is."
-    yh "You can pick up your payment when you leave the building, I believe the hourly rate is still the same?"
-    ry "Ah, actually I'd rather not charge you the full amount, we've barely gone past 30 minutes."
-    ry "Wouldn't feel right."
-    yh "Ah. Then why not do small talks?"
-    ry "It's okay, I'll take-"
-    yh "I insist, young man."
-    ry "...Fine. Do note this means I'll charge by the hour."
-    yh "Naturally."
-    yh "Now, how has life been treating you so far?"
-    ry "So-so I guess. Can't complain."
-    yh "I'd imagine being the go-to fortune teller for the city's underworld would pay well."
-    yh "Have you considered moving out of the undercity? After all, it is within your means."
-    ry "I like the neighborhood. Can't see myself moving up like that, honestly."
-    yh "Ah, yes, good neighbors. Can't really buy those I suppose."
-    yh "Speaking of neighbors."
-    "Here we go. What has she got up her sleeve now?"
-    yh "Is it not unfortunate that one must have such unruly neighbors?"
-    yh "The collapse of the constabulary last year was bad enough, but now this frightful wave of violence."
-    yh "Open street fighting in Kabuki-Cho, gunning down of yakuza members in broad daylight in view of the public…"
-    ry "I don't think it's my place to comment on such matters."
-    yh "Surely someone in the middle of all this cannot afford to have no opinion?"
-    ry "I'll try my best, madame."
-    yh "Even if he were to, hypothetically, be called by one of the main actors of this play, who isn't quite sure if she'll make it through with her head on her shoulder?"
-    ry "..."
-
-    "How'd she know?!"
-    "Calm down, Ryouhei. Deep internal breathes. More bark than bite."
-
-    ry "*Especially* if that were the case, madame."
-    yh "A man of integrity. Not a common sight."
-
-    "She proceeded to pull something out of the obi of her red floral kimono."
-    "...A gun?"
-    "Pointed at my head?!"
-
-    yh "This is hypothetical, of course, but would that same integrity stay with a sword pointed at your neck?"
-
-    "A hypothetical sword yes, but a very real gun!"
-
-    yh "Now, what did that disgrace ask? And how did you answer her?"
-    ry "I-I can't possibl-"
-
-    "She proceeded to put her finger on the trigger, and smiled."
-
-    yh "Don't make this hard on either of us, master fortune-teller, getting blood out of velvet is such an inconvenience."
-    ry "Y-you're asking me to breach the confidence clients enjoy, and I can-"
-    "*Bang*"
-
-    "Hibana Yosano let out an amused hum. And I am still alive."
-    "It was now obvious that the shot was a blank, but I damn near shat myself right then and there."
-
-    yh "Now this is a rarity."
-    yh "Perhaps the faith the Old Cabal placed upon you was not misplaced at all."
-
-#---
-
-    "he rest of the time was spent in actual small talks. Or attempts to."
-    "I cannot even hold a conversation after a gun is pointed at my head."
-
-#[A/N Door opening noises]
-
-    x "Mother, it's time for your division with the Council President."
-    yh "Oh my, is it that late already?"
-    yh "This has been a pleasant hour, master fortune-teller, but I must take my leave."
-    yh "If you do not mind, my son Haruo will escort you out."
-    ry "That would be fine."
-    yh "Splendid. Haruo, if you would do the honors?"
-    h "Of course. If I may."
-
-    "I allow myself to be blindfolded yet again."
-    "At least they’re respectful about it. Can’t say the same about the other clients."
-#---
-
-    h "Here is your phone, and here is your payment."
-    ry "...You didn’t put a bug or anything on this right?"
-    h "Heh, of course not. If anything I’d actually encourage you to have it checked just in case."
-    h "My parents try their best to keep their words, and in your case they’ve seen that respect is mutual."
-    ry "Good to know."
-
-
-    "As I accepted the enveloped payment, I am tempted"
-    "to ask how the Yosanos found out what the Ozakis asked."
-    "But I figured that would be asking for trouble, so I kept my mouth shut."
-
-    h "Well, pleasure doing business with you, master fortune-teller."
-    ry "Please, just Ryouhei is fine. We’re the same age, give or take, from the looks of it anyways."
-    h "Of course, Ryouhei-san. Of course, I must now take my leave."
-    ry "Sure, I’ll also be on my way."
-    if choice == "1" :  
-        jump menua
-
-    else:
-        jump choice2postarena
-
-    
-#---
-
-label menua:
-#[A/N Start of Alt A Backstage or Night City CG]
-
-    ry "Great fight."
-    r "I aim to entertain." #(A/N Smug)
-    r "By the way, I have someone I want to introduce you to."
-    r "Ta-daaaa! Meet my friend and colleague, Takeshi."
-    tk "Pleasure to meet you. Reimi seems to have taken a liking to you."
-
-    "Guy’s massive. I wouldn’t be surprised if he is ex-constable."
-    "Gotta make a living I guess."
-
-
-    tk "You told me this guy can tell your fortune?"
-    r "Never misses too, guy’s got talent."
-
-    "Well, capital T Talent, yes, but no need to advertise that."
-
-    ry "Putting that aside, is this okay?"
-    r "I wouldn’t have invited you if it wasn’t okay."
-    ry "Not that. You guys have to keep the act in public, right?"
-    r "First time I heard of it."
-    tk "Old school too. Where’d you find this relic?"
-    r "The lower town is an interesting place."
-    tk "Can’t disagree, won’t disagree."
-    r "Anyways, since today is my payday-"
-    ry "Mine too as a matter of fact."
-    r "Shhh. I’m paying, and I’m hankering for some izakaya yakitori."
-
-    "I shrugged. I wasn’t about to turn down a free dinner, after all."
-
-    tk "Well, I guess you’re paying for some glasses too?"
-    r "Sure, throw it in, I’m feeling generous today."
-    jump menub
-
-label menub:
-
-#---
-
-#[A/N Izakaya CG]
-    r "Man, I’m full."
-    r "I'm gonna go worship the Porcelain Throne for a bit, you boys don't kiss each other while I’m away."
-#[A/N Shuffling boots sounds]
-    ry "So, Takeshi. Can I call you that, by the way?"
-    tk "Go ahead, I won't bite."
-    ry "Cool. I’m actually kinda curious, you don’t seem like the type to actually start his career with ring fights."
-    tk "Well, you don’t look like the type that can afford being around this neighborhood."
-    ry "Fair. You first or me first?"
-    tk "Janken?"
-    ry "Janken."
-    jump izakayab
-    
-
-# implemented a jump for fade effect 
-#---
-
-label izakayab:
-    tk "Really?"
-    ry "Hey, at least it pays well enough."
-    tk "Your soul’s being sucked completely straight out of your body though."
-    tk "I know those types."
-    tk "Well I guess that makes for a good place for me to make an entrance."
-    tk "As you can probably guess, I was an undertown cop. 13th Precinct."
-    ry "Isn’t that the worst part of town?"
-    tk "Yep. Every Yakuza deal gone wrong, every gangland murder, it all happens there."
-    tk "Well, it used to happen there. After I got pushed out of the Constabulary, Council Hall started pulling out of the undertown."
-    tk "Said something about fiscal responsibility and budgetary deficits, but that sounds like a buncha bull to me."
-
-    "Well, it kind of isn’t. The city always had a smuggling problem and I’d guess it put the budget into a death spiral."
-    "And put quite a few constables out of jobs from the looks of it."
-
-    tk "I’m one of the luckier ones, honestly."
-    tk "When that happens, there’s three things that can happen to you."
-    tk "You get reassigned to uptown, you work with the Yakuza, or you end up homeless."
-    ry "You’re still somewhere between alternatives two and three though."
-    tk "Nice, I like a sharp guy." #[A/N Sincere]
-    tk "Yes and no. This gig is paying enough and I also sell stuff on the side."
-    tk "Nothing hot. Just vegetables I grow on my own time."
-    ry "You know, from your looks I was half expecting guns or something hotter."
-    tk "Well, I can sell you that too but then I’ll have to arrest you."
-    tk "That said I’ve got some old world chilis growing if that’s what you’re talking about."
-
-    "We both laughed at the pun."
-
-    r "What are you guys laughing about?"
-    ry "Nothing, nothing hot."
-    r "Takeshi?"
-    tk "I plead my right to remain silent"
-    r "Grrrhhhh-"
-    ry "I don’t think you can handle the spice, Reimi."
-
-    "Takeshi started to snort again, suppressing his laughter."
-
-    r "Seriously you two-"
-    ry "Man I better bail before this miko bonks me."
-    ry "See you around Take-"
-
-    # TODO ADD SPECIAL EFFECTS HERE SMH
-
-    "Takeshi locked my arms before I even got to stand."
-
-    tk "If you wanna find out what he said, you really should find his spot."
-    r "O-hoooo? Tickle torture? I like the way you think."
-
-
-    "Gulp...."
-    "This is going to be a long night..."
-    if flag_1 == True:
-        jump day_31
-    else:
-        jump day_3
-
-#[A/N End of Alt A]
-label day_31:
-    "lorem ipsum"
-    return
-
-label choice2postarena:
-
-#[A/N Start of Alt B, night in front of house BG]
-    "I unlock the door to my house, its familiar clicking a comforting noise." 
-    "The job I’m doing pays well, but by all that is holy sometimes it feels like it’s not worth it."
-    "A gun pointed at my head and a blank fired at me for 400 yen an hour..."
-    "I make more than 20 times an hour most other workers in this god-forsaken city do, but how much does hazard pay go?"
-    "Every day, a creeping feeling of emptiness keeps creeping into the back of my mind."
-    "What do I want? Where do I want to be? Why am I still here?"
-    "Maybe that damn viper is right, I should move up."
-    "But then again..."
-
-    "The vibrations of my phone in my pocket pulled me out of my thoughts."
-    "Reimi again. This time with a picture, her with a massive guy, eating together in an izakaya."
-
-    rit "hows work?"
-    rit "jealous yet?"
-
-    "Urghhhh..."
-
-    ryt "Really not in the mood for this, Reimi."
-    rit "jeez they treat you that badly?"
-    ryt "If only you knew."
-    ryt "Not in the mood to tell a story. Talk to me tomorrow."
-    rit "ew prickly"
-    rit "sure good night sweet prince <3]"
-    nvl clear
-
-    "I swear…"
-    "I’d kill for great coworkers."
-    "Sigh..."
-    "I’ll just take a bath, make something and go to sleep."
-    "It’s not like tomorrow’s going to be any worse."
-    "Kind of hard topping having a gun pushed up to your head at work."
-#[A/N End of Alt B]
-    "I sleep. hoping tomorrow would be better"
-    jump day_3
 
 label day_3:
     #VN Day 3
@@ -683,141 +292,141 @@ label day_3:
     rc "A-an actual table sir?? or the---"
     isr "Yes, the clean-up kind"
     rc "A-aah right a-away sir"
-    isr “I\’ll tell you this since you’re still new, I\’ll reserve an actual table if I mention an actual place, got it?” 
-Receptionist: “L-loud and clear sir”
-isr “Great, we’re set then, don’t forget about telling Gotou”
-Receptionist: “Y-yes sir”
-isr “Good”
-*Click*
-With Isurugi’s conversation over the intercom done he turned his attention to the last person left unpunished. The last staff to be judged was visibly shaken, cold sweat had broken out far before that fiasco with the traitor.
-Before Isurugi could ask what was wrong the man broke down in tears asking for forgiveness, begging even harder than the traitor.
-isr “Calm down boy, I’m not gonna give ya a verdict without hearing your reasons”
-Staff: “I’m sorry for the unsightly display sir… I was just desperate”
-Isurgi: “Well, seeing your reaction i guess it’s safe to assume you’re guilty and regretting it right now”
-Staff: “Yes sir, right now I’m stuck between a rock and a hard place”
-isr “So? Why’d you do it?”
-Staff: “I had to sir, I was blackmailed to do those things”
-isr “Blackmailed? Do they have evidence of your fucked up fetish on their hands?”
-Staff: “I wish it was, they got my family,  my wife and kid”
-isr “Family eh? What happened if you don’t mind my asking?”
-Staff: “My kid needs money for his hospital bills, my savings couldn’t entirely cover it”
-isr “Let me guess, you went to loan sharks because of your affiliation with House Hirotsu?”
-Staff: “Yes sir, but it was mostly out of principle, I’m trying to be affiliated with this life as little as possible”
-isr “That’s the first time I’ve ever heard such a reason, so you didn’t try to show off you worked for me?”
-Staff: “Well, my wife doesn’t really approve of this line of work, I try my best to avoid things affiliated with the big 3 outside of work”
-isr “So since it was a personal matter,  you went to the loan sharks with that mindset but it ended up backfiring?”
-Staff: “That’s the gist of it, when it came time to pay the loan what I had wasn’t enough to clear the interest”
-Staff: “So the trashed my house and was about to harm my family, I blurted out that I worked for House Hirotsu in hopes it would scare them”
-isr “But they got greedy and wanted you to do things else they hurt your family, which they have taken in case you chicken out? That right?”
-Staff: “Yes sir that’s the whole story”
-isr “Honestly things would’ve been easier for you had you went to one of the banks we own, but I can respect a man who’s got integrity”
-Staff: “I agree sir, and I’m ready to receive my punishment for this, all I ask is you don't mess up my face too much, wouldn’t want my kid not recognizing his old man on his own funeral”
-isr “You went from begging for your life to accepting death pretty quick”
-Staff: “I realized I’ve lived a good life, and should I die right now, I’d at least stuck to my principles and integrity besides with me gone, there’s nothing they could do about my debt”
-isr “That is quite the mature thought, up until that last statement anyway”
-Staff: “W-what do you mean sir?”
-isr “Well with you outta the picture they’ll just focus even more on your wife and kids, right now they’re just bargaining chips against you, but as soon as you’re out...”
-isr “Believe me, things ain’t gonna be pretty”
-Staff: “S-so what you’re saying is my wife and kids won’t be free even if I die? But there’s no one to pay them! ”
-isr “I don’t know if I should laugh or feel sorry for your naivety kid, in this business someone’s gotta pay”
-Staff: “So it doesn’t matter even if I die?”
-isr “I’m afraid not kid, so you ready to die?”
-Staff: “No, not until I know my family is safe, if I’m dying either way at least I want to die trying to save my family”
-isr “Good answer kid, your punishment has been nullified, besides I feel the initial beatdown was punishment enough for someone who’s got intentions like you”
-Staff: “B-but sir I fucked up”
-isr “Kid, you’re looking out for your family to the very end despite death staring you at the face, I need more people like you here”
-isr “Tatsuki, help this man here get his family safe”
-Staff: “T-thank you sir, I’ll never forget this”
-The man started bowing as tears build up in his eyes, but before the waterworks could burst he was led by Tatsuki outside of the office
-ry “Didn’t take you for the understanding kind”
-isr “I’m just taking care of my property, simple as that”
-ry “So was that part of the reason you’re the one who texted the memo?”
-isr “It was a showcase of power and perks I guess, truth be told I trust you enough to be dealing with you hands on”
-isr “Well, with that done hand Samsara over”
-ry “As you wish sir”
-I took Samsara off my neck and threw it to Isurugi, he caught it with ease and started peering into Samsara, and not long after he threw it back.
-ry “That was quite the quick one”
-isr “Well I don’t have any major projects going on, so it was merely about maintenance, if you could even call it that ”
-ry “I’ll take my leave then sir”
-isr “Money will be transferred to your account as usual”
-ry “Appreciate it sir”
-isr “Word of advice kid, never betray me, your death would be painful and the other big 3 would consider it a favor having a rat removed”
-ry “As if today was not enough of an example, I’ll be waiting our next appointment sir”
-isr “Heh, take care kid”
-[Streets]
-With that I left the building, and once again i found myself wandering the streets of Upper Shinjuku only to be disturbed by the sound of my stomach growling 
-I looked on my phone, the clock read 11:12 a.m still far from lunch time but considering I haven’t had breakfast I think it’s a fair time for the growling
-[Convenience store]
-I went to the nearest  convenience store to grab some cup ramen, as i was searching for the cup ramen i saw some bargain pocky sticks, somehow they remind me of Reimi
+#     isr “I\’ll tell you this since you\’re still new, I\’ll reserve an actual table if I mention an actual place, got it?” 
+# Receptionist: “L-loud and clear sir”
+# isr “Great, we’re set then, don’t forget about telling Gotou”
+# Receptionist: “Y-yes sir”
+# isr “Good”
+# *Click*
+# With Isurugi’s conversation over the intercom done he turned his attention to the last person left unpunished. The last staff to be judged was visibly shaken, cold sweat had broken out far before that fiasco with the traitor.
+# Before Isurugi could ask what was wrong the man broke down in tears asking for forgiveness, begging even harder than the traitor.
+# isr “Calm down boy, I’m not gonna give ya a verdict without hearing your reasons”
+# Staff: “I’m sorry for the unsightly display sir… I was just desperate”
+# Isurgi: “Well, seeing your reaction i guess it’s safe to assume you’re guilty and regretting it right now”
+# Staff: “Yes sir, right now I’m stuck between a rock and a hard place”
+# isr “So? Why’d you do it?”
+# Staff: “I had to sir, I was blackmailed to do those things”
+# isr “Blackmailed? Do they have evidence of your fucked up fetish on their hands?”
+# Staff: “I wish it was, they got my family,  my wife and kid”
+# isr “Family eh? What happened if you don’t mind my asking?”
+# Staff: “My kid needs money for his hospital bills, my savings couldn’t entirely cover it”
+# isr “Let me guess, you went to loan sharks because of your affiliation with House Hirotsu?”
+# Staff: “Yes sir, but it was mostly out of principle, I’m trying to be affiliated with this life as little as possible”
+# isr “That’s the first time I’ve ever heard such a reason, so you didn’t try to show off you worked for me?”
+# Staff: “Well, my wife doesn’t really approve of this line of work, I try my best to avoid things affiliated with the big 3 outside of work”
+# isr “So since it was a personal matter,  you went to the loan sharks with that mindset but it ended up backfiring?”
+# Staff: “That’s the gist of it, when it came time to pay the loan what I had wasn’t enough to clear the interest”
+# Staff: “So the trashed my house and was about to harm my family, I blurted out that I worked for House Hirotsu in hopes it would scare them”
+# isr “But they got greedy and wanted you to do things else they hurt your family, which they have taken in case you chicken out? That right?”
+# Staff: “Yes sir that’s the whole story”
+# isr “Honestly things would’ve been easier for you had you went to one of the banks we own, but I can respect a man who’s got integrity”
+# Staff: “I agree sir, and I’m ready to receive my punishment for this, all I ask is you don't mess up my face too much, wouldn’t want my kid not recognizing his old man on his own funeral”
+# isr “You went from begging for your life to accepting death pretty quick”
+# Staff: “I realized I’ve lived a good life, and should I die right now, I’d at least stuck to my principles and integrity besides with me gone, there’s nothing they could do about my debt”
+# isr “That is quite the mature thought, up until that last statement anyway”
+# Staff: “W-what do you mean sir?”
+# isr “Well with you outta the picture they’ll just focus even more on your wife and kids, right now they’re just bargaining chips against you, but as soon as you’re out...”
+# isr “Believe me, things ain’t gonna be pretty”
+# Staff: “S-so what you’re saying is my wife and kids won’t be free even if I die? But there’s no one to pay them! ”
+# isr “I don’t know if I should laugh or feel sorry for your naivety kid, in this business someone’s gotta pay”
+# Staff: “So it doesn’t matter even if I die?”
+# isr “I’m afraid not kid, so you ready to die?”
+# Staff: “No, not until I know my family is safe, if I’m dying either way at least I want to die trying to save my family”
+# isr “Good answer kid, your punishment has been nullified, besides I feel the initial beatdown was punishment enough for someone who’s got intentions like you”
+# Staff: “B-but sir I fucked up”
+# isr “Kid, you’re looking out for your family to the very end despite death staring you at the face, I need more people like you here”
+# isr “Tatsuki, help this man here get his family safe”
+# Staff: “T-thank you sir, I’ll never forget this”
+# The man started bowing as tears build up in his eyes, but before the waterworks could burst he was led by Tatsuki outside of the office
+# ry “Didn’t take you for the understanding kind”
+# isr “I’m just taking care of my property, simple as that”
+# ry “So was that part of the reason you’re the one who texted the memo?”
+# isr “It was a showcase of power and perks I guess, truth be told I trust you enough to be dealing with you hands on”
+# isr “Well, with that done hand Samsara over”
+# ry “As you wish sir”
+# I took Samsara off my neck and threw it to Isurugi, he caught it with ease and started peering into Samsara, and not long after he threw it back.
+# ry “That was quite the quick one”
+# isr “Well I don’t have any major projects going on, so it was merely about maintenance, if you could even call it that ”
+# ry “I’ll take my leave then sir”
+# isr “Money will be transferred to your account as usual”
+# ry “Appreciate it sir”
+# isr “Word of advice kid, never betray me, your death would be painful and the other big 3 would consider it a favor having a rat removed”
+# ry “As if today was not enough of an example, I’ll be waiting our next appointment sir”
+# isr “Heh, take care kid”
+# [Streets]
+# With that I left the building, and once again i found myself wandering the streets of Upper Shinjuku only to be disturbed by the sound of my stomach growling 
+# I looked on my phone, the clock read 11:12 a.m still far from lunch time but considering I haven’t had breakfast I think it’s a fair time for the growling
+# [Convenience store]
+# I went to the nearest  convenience store to grab some cup ramen, as i was searching for the cup ramen i saw some bargain pocky sticks, somehow they remind me of Reimi
 
-Choice A: 
-“She’s probably fine, besides I think I had enough excitement for one day with House Hirotsu, I’ll just buy some cup ramen and go home”
+# Choice A: 
+# “She’s probably fine, besides I think I had enough excitement for one day with House Hirotsu, I’ll just buy some cup ramen and go home”
 
-Choice B1 (Izakaya): 
-“Well eating with other people is always better the izakaya yesterday proved that, besides cup ramen ain’t the healthiest, I’ll buy some ingredients here and then drop by her place”
-
-
-Choice B2 (no Izakaya):
-“I wonder how Reimi’s doing after her match yesterday? I guess I’ll drop by her place after buying a couple of ingredients”
+# Choice B1 (Izakaya): 
+# “Well eating with other people is always better the izakaya yesterday proved that, besides cup ramen ain’t the healthiest, I’ll buy some ingredients here and then drop by her place”
 
 
-B path:
-I put the cup ramen back and proceeded to grab some ingredients, nothing much really just some vegetables and some meat enough for a hotpot for 2 and went up to the cashier to pay. I gave her a tip for her troubles. 
-[Streets]
-Making my way to Reimi’s place was nothing new to me, I’ve been there on several occasions, the new thing was dropping by unannounced, in my head I kept practicing on what to say to make this visit seem natural, try as I might I couldn’t come up with something.
-Finally I was at her front door, and after hesitating a couple of seconds I finally knocked.
-[Door]
-*Knock, Knock, Knock*
-ry “Reimi?? it’s me Ryohei, open up I bought some stuff”
-A voice was heard from the room
-Reimi: “Ah, Ryo-chan? Hold on I’ll be right with you, you better not have bought cup ramen with you”
-ry “Hey, cup ramen is what I eat alone, I bought some ingredients for a hot pot”
-The door opened revealing Reimi in casual clothes.
-Reimi: “Well come in”
-ry “Yeah thanks”
-[Reimi’s Apartment]
-Reimi: “I was surprised you visit Ryo-chan, this is a first you showing up uninvited”
-ry “Yeah,  I was in a convenience store nearby and the pocky they sell reminded me of you”
-ry “Ah. Where should I put this by the way”
-Reimi: “Just put in on the table, I’ll prepare the pots”
-ry “Sure”
-Reimi prepared the pot and stock for our hotpot while I was preparing the ingredients, mostly cutting the vegetables, and preparing the rice. The meat was packaged after they were fillet so it didn’t need much prep work. 
-As the stock simmered it’s fragrance filled the room we quickly dropped in the vegetables and the meat, and I carried the pot to the table whilst Reimi was scooping the cooked rice into bowls for the both of us. We sat down and we ate our fill. After eating, we spoke about everything and nothing. I stayed at Reimi’s for quite some time, and seeing that it had gotten dark outside I decided it was time to go home.  
-
-ry “Well, I better get going, thanks for having me Reimi”
-Reimi: “Hold up Ryo-chan, I got something for you”
-Reimi went off to her room and rummaged around for a bit
-Reimi: “Here you go, as thanks for dropping by”
-ry “A charm?”
-Reimi: “Not just any charm, it’s a lucky charm”
-Reimi: “With your line of work I figured you could use the extra luck”
-ry “Thanks Reimi, I’ll be sure to treasure this...”
-ry “Well, I’ll be going for real now then… See you tomorrow”
-Reimi: “Sure, see you tomorrow”
-[Outside Nighttime]
-I went out the door and made my way home, the journey home was a silent one, I couldn’t even think about anything. Today was so hectic, and all I want now is just to sleep
-[Ryohei’s bedroom]
-Choice A merger
-Before I knew it, I was at my doorstep. I went inside and started my hygiene routine before bed, after I showered I felt the munchies come, so I prepared some cup ramen.
-Once finished I brushed my teeth and lay in bed. Today took a lot out of me, as I scrolled through my phone I could already feel the drowsiness taking over, and before I could realize I was closing my eyes and my consciousness started fading fast.
-
-[Day 3 End] 
+# Choice B2 (no Izakaya):
+# “I wonder how Reimi’s doing after her match yesterday? I guess I’ll drop by her place after buying a couple of ingredients”
 
 
+# B path:
+# I put the cup ramen back and proceeded to grab some ingredients, nothing much really just some vegetables and some meat enough for a hotpot for 2 and went up to the cashier to pay. I gave her a tip for her troubles. 
+# [Streets]
+# Making my way to Reimi’s place was nothing new to me, I’ve been there on several occasions, the new thing was dropping by unannounced, in my head I kept practicing on what to say to make this visit seem natural, try as I might I couldn’t come up with something.
+# Finally I was at her front door, and after hesitating a couple of seconds I finally knocked.
+# [Door]
+# *Knock, Knock, Knock*
+# ry “Reimi?? it’s me Ryohei, open up I bought some stuff”
+# A voice was heard from the room
+# Reimi: “Ah, Ryo-chan? Hold on I’ll be right with you, you better not have bought cup ramen with you”
+# ry “Hey, cup ramen is what I eat alone, I bought some ingredients for a hot pot”
+# The door opened revealing Reimi in casual clothes.
+# Reimi: “Well come in”
+# ry “Yeah thanks”
+# [Reimi’s Apartment]
+# Reimi: “I was surprised you visit Ryo-chan, this is a first you showing up uninvited”
+# ry “Yeah,  I was in a convenience store nearby and the pocky they sell reminded me of you”
+# ry “Ah. Where should I put this by the way”
+# Reimi: “Just put in on the table, I’ll prepare the pots”
+# ry “Sure”
+# Reimi prepared the pot and stock for our hotpot while I was preparing the ingredients, mostly cutting the vegetables, and preparing the rice. The meat was packaged after they were fillet so it didn’t need much prep work. 
+# As the stock simmered it’s fragrance filled the room we quickly dropped in the vegetables and the meat, and I carried the pot to the table whilst Reimi was scooping the cooked rice into bowls for the both of us. We sat down and we ate our fill. After eating, we spoke about everything and nothing. I stayed at Reimi’s for quite some time, and seeing that it had gotten dark outside I decided it was time to go home.  
+
+# ry “Well, I better get going, thanks for having me Reimi”
+# Reimi: “Hold up Ryo-chan, I got something for you”
+# Reimi went off to her room and rummaged around for a bit
+# Reimi: “Here you go, as thanks for dropping by”
+# ry “A charm?”
+# Reimi: “Not just any charm, it’s a lucky charm”
+# Reimi: “With your line of work I figured you could use the extra luck”
+# ry “Thanks Reimi, I’ll be sure to treasure this...”
+# ry “Well, I’ll be going for real now then… See you tomorrow”
+# Reimi: “Sure, see you tomorrow”
+# [Outside Nighttime]
+# I went out the door and made my way home, the journey home was a silent one, I couldn’t even think about anything. Today was so hectic, and all I want now is just to sleep
+# [Ryohei’s bedroom]
+# Choice A merger
+# Before I knew it, I was at my doorstep. I went inside and started my hygiene routine before bed, after I showered I felt the munchies come, so I prepared some cup ramen.
+# Once finished I brushed my teeth and lay in bed. Today took a lot out of me, as I scrolled through my phone I could already feel the drowsiness taking over, and before I could realize I was closing my eyes and my consciousness started fading fast.
+
+# [Day 3 End] 
 
 
 
 
-label day_4:
-    "1. You have nothing to do so you go visit reimi at the sibuya arena"
 
-    "2. After watching the fight you two go up the upper shinjuku"
 
-    "3. the both of you sit on the top of the abandoned apartment building"
+# label day_4:
+#     "1. You have nothing to do so you go visit reimi at the sibuya arena"
 
-    "4. Reimi asks if you want to run away"
-    # TODO menuchoice which the player decides if he/she wants to run or stay.
+#     "2. After watching the fight you two go up the upper shinjuku"
 
-    # This ends the game.
+#     "3. the both of you sit on the top of the abandoned apartment building"
 
-    return
+#     "4. Reimi asks if you want to run away"
+#     # TODO menuchoice which the player decides if he/she wants to run or stay.
+
+#     # This ends the game.
+
+#     return
