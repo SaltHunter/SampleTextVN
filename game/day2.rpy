@@ -346,6 +346,7 @@ label izakayab:
 
     "Gulp...."
     "This is going to be a long night..."
+    jump day_3
     
 
 label choice2postarena:
