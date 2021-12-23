@@ -336,3 +336,4 @@ label day3choiceA:
     "Today took a lot out of me, as I scrolled through my phone I could already feel the drowsiness taking over, and before I could realize I was closing my eyes and my consciousness started fading fast."
 return
     #[Day 3 End] 
+    #TODO Actually End the bloody thing
