@@ -90,7 +90,7 @@ label start:
     nvl clear
     call day_1
     call day_2
-    call day_3
+    
     return
 
 # label day_4:

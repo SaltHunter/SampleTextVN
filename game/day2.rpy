@@ -387,3 +387,4 @@ label choice2postarena:
     "Kind of hard topping having a gun pushed up to your head at work."
 #[A/N End of Alt B]
     "I sleep. hoping tomorrow would be better"
+    jump day_3
