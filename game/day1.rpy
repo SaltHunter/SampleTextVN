@@ -99,7 +99,7 @@ label day_1:
     "Who am I kidding, I live alone anyway."
     "Despite making more than enough money to live, I cannot live in the decadent territory known as Upper Shinjuku."
     
-    jump shinjuku
+    #jump shinjuku
 
     # Why the heck do you have to use jump when the label to jump to is literally in the next line?
     # You're not going back to that label anyway, right?
@@ -183,9 +183,9 @@ label .shinjuku:
     Though Reimi is not around, I guess I should just head towards Bar Poirot.
     """
 
-    jump barlabel
+    
 
-label .barlabel:
+#label .barlabel:
     #[Transition to Bar Poirot]
     scene bg poirot
     with fade

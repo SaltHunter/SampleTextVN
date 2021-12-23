@@ -91,6 +91,7 @@ label start:
     call day_1
     call day_2
     call day_3
+    return
 
 # label day_4:
 #     "1. You have nothing to do so you go visit reimi at the sibuya arena"

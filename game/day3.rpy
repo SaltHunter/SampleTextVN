@@ -334,5 +334,5 @@ label day3choiceA:
     "Before I knew it, I was at my doorstep. I went inside and started my hygiene routine before bed, after I showered I felt the munchies come, so I prepared some cup ramen."
     "Once finished I brushed my teeth and lay in bed." 
     "Today took a lot out of me, as I scrolled through my phone I could already feel the drowsiness taking over, and before I could realize I was closing my eyes and my consciousness started fading fast."
-    return
+return
     #[Day 3 End] 
