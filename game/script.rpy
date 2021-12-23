@@ -33,6 +33,7 @@ define rc = Character("Receptionist")
 define tt = Character("Traitor")
 define rk = Character("Rookie")
 define to = Character("Tram Operator")
+define st = Character("Staff")
 
 # Definition of Flags go here.
 define flag_1 = False

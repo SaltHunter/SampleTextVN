@@ -463,4 +463,12 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-controller: '3412adbe000000000000504944564944' No
+controller: '3412adbe000000000000504944564944' None 0L
+Total time until interface ready: 2.33200001717s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.003000 seconds.
+- Frame drawn at 0.004000 seconds.
+- Frame drawn at 0.009000 seconds.
+- Frame drawn at 0.016000 seconds.
+- 0.016000 seconds to render 5 frames.

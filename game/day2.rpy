@@ -346,15 +346,7 @@ label izakayab:
 
     "Gulp...."
     "This is going to be a long night..."
-    if flag_1 == True:
-        jump day_31
-    else:
-        jump day_3
-
-#[A/N End of Alt A]
-label day_31:
-    "lorem ipsum"
-    return
+    
 
 label choice2postarena:
 
