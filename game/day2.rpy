@@ -66,7 +66,6 @@ label choice1arena:
     $ flag_1 = True
     ryt "Fine, I'll go."
     rit "cool see you after the fight you can pick up the ticket at the usual spot"
-    nvl clear
 jump day2commonroute
 #[A/N End Alt A]
 
@@ -76,7 +75,6 @@ label choice2arena:
     ryt "You actually are a miko, right?"
     rit "ha ha very funny"
     rit "maybe i'll even attach it to your head see if that fix your personality or something"
-    nvl clear
 jump day2commonroute
 
 #[A/N End Alt B]
@@ -348,8 +346,15 @@ label izakayab:
 
     "Gulp...."
     "This is going to be a long night..."
-    jump day_3
-    
+    if flag_1 == True:
+        jump day_31
+    else:
+        jump day_3
+
+#[A/N End of Alt A]
+label day_31:
+    "lorem ipsum"
+    return
 
 label choice2postarena:
 

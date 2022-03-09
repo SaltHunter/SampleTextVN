@@ -99,7 +99,7 @@ label day_1:
     "Who am I kidding, I live alone anyway."
     "Despite making more than enough money to live, I cannot live in the decadent territory known as Upper Shinjuku."
     
-    #jump shinjuku
+    jump shinjuku
 
     # Why the heck do you have to use jump when the label to jump to is literally in the next line?
     # You're not going back to that label anyway, right?
@@ -147,7 +147,7 @@ label .shinjuku:
     ryt "mm, i'll see if I'll be there."
 
     "As quickly as I replied, I turned off my phone."
-    ry "That woman..."
+    ry "That woman . . ."
 
     nvl clear
 
@@ -181,9 +181,11 @@ label .shinjuku:
     Checking the clock on my phone, it's only 9:30AM. I still have 30 minutes free.
 
     Though Reimi is not around, I guess I should just head towards Bar Poirot.
-    """   
+    """
 
-#label .barlabel:
+    jump barlabel
+
+label .barlabel:
     #[Transition to Bar Poirot]
     scene bg poirot
     with fade
@@ -213,27 +215,27 @@ label .shinjuku:
     w "I've been expecting you, Mr. Sakaguchi, very nice to meet you."
     ry "A... Ah, yes. Good to meet you again, Madame Ozaki."
     o "As per last time you showed me that I will take control of Kabuki-chou, which thankfully happened as per your prediction. 
-    Now I'd like to ask you for some... extra favors."
+    Now I'd like to ask you for some . . . extra favors."
 
     "Another one of her bodyguards handed her an ivory cigarette holder and lit a fire."
     "Meanwhile Yamada opens a bottle of cognac and pours it into a wine glass."
 
     o "Would you like some yourself? On the house."
-    ry "Thank you, Madame Ozaki, but I don't drink."
+    ry "Thank you, Madame Ozaki but I don't drink."
     o "Well you're still quite the sourpuss aren't you. Working for the mafia and yet you still try your best to stay clean, 
     I'm more surprised you're still clean up until now."
-    o "Either way, I called you here today for some... fortune telling."
+    o "Either way, I called you here today for some . . . fortune telling."
     ry "Of course, give me a minute."
 
     "I took off the pendant around my neck, handing it to her bodyguard, Yamada."
-    "Slowly, he held the jewel in the middle in front of Madame Ozaki's eyes."
+    "Slowly he held the jewel in the middle in front of Madame Ozaki's eyes."
     "In a flash, Madame Ozaki looked overwhelmed."
 
-    o "Something has changed, Sakaguchi, tell me why it changed!"
-    ry "W... what? What's the matter?"
-    o "Last time, it showed that after I have taken control of Kabuki-chou I will live up to the age of 89."
+    o "Something has changed, Sakaguchi tell me why it changed!"
+    ry "W . . . what? What's the matter?"
+    o "Last time it showed that after I have taken control of Kabuki-chou that I will live up to the age of 89."
     o "Now why does it show that I will die in two months time!"
-    o "TELL ME, SAKAGUCHI!"
+    o "Tell me, Sakaguchi!"
 
         # TODO have an angry expression for ozaki chan
 
@@ -247,10 +249,10 @@ label .shinjuku:
 
     "Madame Ozaki slammed her glass onto the table, breaking the cup."
 
-    ry "I guess uhh... "
-    ry "... You can tell me what happened right before you died?"
+    ry "I guess uhh . . . "
+    ry ". . . can you tell me what happened right before you died."
     o "Then why don't you look at it yourself?!"
-    ry "I cannot see other people's visions... and I do not know of any plans from the other clans."
+    ry "I cannot see other people's visions . . . and I do not know of any plans from the other clans."
     o "Then explain how your Talent predicted something wrong."
 
     "Kei’s eyes stare me down like daggers"
@@ -280,26 +282,25 @@ label .shinjuku:
     "These leaders are always one step away from death."
     "Samsara is able to see through that, but because I own the Talent I'm also the one to blame."
 
-    o "I appreciate your work, Mr. Sakaguchi. Without you, I might have died too early."
+    o "I appreciate your work, Mr. Sakaguchi. Without you I might have died too early."
     ry "A.. ah. No worries."
-    o "I'll pay you the usual alright. 50,000 yen?"
-    ry "Alright, thank you Madame Ozaki."
+    o "I'll pay you the usual alright, 50,000 yen?"
+    ry "Alright, thank you Madame Ozaki"
     hide ozaki_kei happy
 
-#label .uppershinjuku:
+label .uppershinjuku:
     #[Transition to Upper Shinjuku]
     # Question, scenes here would be izakaya outside? shinjuku? or what? how are we going to transition this?
     scene bg baroutdoor
     with fade
-    "I exhaled... thank God this job is over."
-    "Thankfully, despite her temper, Madame Ozaki is a well paying client."
+    "I exhaled . . . thank God this job is over."
+    "Thankfully, despite her temper, Madame Ozaki is a well paying client"
     "Even if things don't go her way at all times, I'm still able to reason with her."
     "It's something at least."
     "She handed me the money in a bag and Yamada returned Samsara to me."
 
     o "Don't spend it all in one place, Mr. Sakaguchi. Pardon my temper."
     ry "Thank you, Madame Ozaki."
-
     # Tentative Transition to shinjuku Background
     scene bg shinjuku
     with fade
@@ -332,9 +333,9 @@ label .shinjuku:
 label harajuku:
     scene bg harajuku
     with fade
-    "Had I known..."
-    "Traffic was light today..."
-    "I would've..."
+    "Had I known . . ."
+    "Traffic was light today . . ."
+    "I would've . . ."
     "TAKEN THE TAXI!!" with vpunch #(Screen jitter here) # TODO Screen Jitter
     "I could only drag my own body to Harajuku, right in front of the gate there I saw her, surrounded by other folks."
     "Reimi Yanagiwara, a professional athlete and a fellow Talent user."
@@ -345,7 +346,7 @@ label harajuku:
     show reimi happy
     with fade
 
-    "She turned her head towards me."
+    "She turned her heads towards me"
 
     r "Ah! Ryou-chan!"
 
@@ -354,13 +355,13 @@ label harajuku:
     r "Ryou-chan! You're finally here!"
     ry "Please, can we not use our first names here, people will get the wrong idea!"
         # Programmer's Note: Jesus Thats a lot of characters to define
-    cr "Is he..."
-    cr "Reimi-chan is...?"
+    cr "Is he . . ."
+    cr "Reimi-chan is . . .?"
 
-    "What did I bring myself into? This woman..."
+    "What did I bring myself into? This woman . . ."
 
-    r "Ah, Sakaguchi, I'm sorry I forgot!"
-    r "I'm sorry guys, but I have to go for a bit!"
+    r "Ah, Sakaguchi I'm sorry I forgot!"
+    r "I'm sorry guys but I have to go for a bit!"
 
     "Reimi took my hand and dragged me away into Harajuku."
 
@@ -371,38 +372,39 @@ label harajuku:
     r "From the price I've seen, it's not terribly expensive."
     ry "Don't worry, price isn't an issue."
     r "By the way, you said you got a payment just now, Ryou-chan?"
+    jump choice1
 
 
-menu .choice1:
-    "Ah, I was getting a payment for a previous job.":
-        jump .choicea
+menu choice1:
+    "Ah, I was getting a payment for a previous job":
+        jump choicea
         $reimi_pts += 5
         
-    "Yeah, they asked me to do some fortune telling.":
-        jump .choiceb
+    "Yeah, they asked me to do some fortune telling":
+        jump choiceb
         $reimi_pts -= 5
 
 
 
 #[Choice A]
-label .choicea:
-    ry "Ah, I was getting a payment for a previous job."
+label choicea:
+    ry "Ah, I was getting a payment for a previous job"
     r "Hmph, I thought you were doing that fortune telling job again."
     ry "Well, the payment was for a previous fortune telling job but, yeah."
     r "Well, the good thing is that you're not really stuck there anymore."
-    jump .commonroute
+    jump commonroute
 
 #[Choice B]
-label .choiceb:
-    ry "Yeah, they asked me to do some fortune telling."
+label choiceb:
+    ry "Yeah, they asked me to do some fortune telling"
     r "Again? I thought you said that you were thinking of stopping."
     ry "I have to live too, you know."
     r "Well, as long as you're safe. I really don't like you being with those people."
-    jump .commonroute
+    jump commonroute
 
 
 #[back to normal]
-label .commonroute:
+label commonroute:
     ry "I'll keep that in mind, I'm sorry if I worried you."
     ry "There's been a lot of short notice jobs lately, I don't understand why."
     r "And that's why you come to the Shibuya Arena, it's a neutral area so you don't have to worry much. Also, there's me!"
@@ -419,64 +421,64 @@ label .commonroute:
     ry "300? That sounds like a full dinner."
     r "Let's be a little hedonistic for once, Ryouhei. Besides, don't worry too much, I'll pay for myself."
     ry "Nah, I'll pay for you, Reimi!"
-    r "Fine then, if you insist."
+    r "Fine then if you insist."
 
     "I ended up buying her a choco-mint and bubblegum ice cream cone."
     "While I got myself an apple caramel flavored cone."
     "Honestly, even if she may act a little clingy."
     "I'm glad to have a friend like her handy."
-    "Sometimes looking at her battle-hardened face, I can only wish to have that kind of strength."
+    "Sometimes looking at her battle-hardened face, I can only wish to have that kind of strength"
     "To face near-death experiences on the daily."
-    "To ride against her opponents..."
+    "To ride against her opponents . . . ."
     "Really she is so much cooler than I am."
 
     r "Oi, Ryou-chan. What's the matter?"
     ry "Hmmm? Why?"
     r "Nah, you've been staring at your cone for quite a bit, is there something in your mind?"
     ry "I'm sorry about being so busy lately."
-    ry "I want to make time for you but... Circumstances."
+    ry "I want to make time for you but . . . circumstances."
 
-    "Reimi leaned back to the wall."
+    "Reimi leaned back to the wall"
 
     r "Tell me, Ryou-chan."
     ry "Hmm? What's the matter?"
-    r "Have you ever thought..."
+    r "Have you ever thought . . . ."
     ry "Thought of what?"
     r "Have you ever thought of running away?"
-    r "Just... leaving this insanity behind and run."
+    r "Just . . . leaving this insanity behind and run."
 
-    menu .escapechoice:
-        "Honestly, given the chance. I'd like to run too.":
-            jump .choicea2
+    menu escapechoice:
+        "Honestly given the chance. I'd like to run too.":
+            jump choicea2
             $reimi_pts += 5
         
         "I feel fine with this life.":
-            jump .choiceb2
+            jump choiceb2
             $reimi_pts -= 5
 
 
 #[Choice A]
-label .choicea2:
+label choicea2:
     ry "Honestly, given the chance. I'd like to run too."
     r "Really?"
     ry "I get a little tired about this fortune telling stuff."
     r "That's kind of understandable."
     ry "Even if I can't run, I just want out of this business. I want to open an izakaya, you know."
     ry "I'd be happy, even with a life like that."
-    jump .commonroute2
+    jump commonroute2
 
 #[Choice B]
-label .choiceb2:
+label choiceb2:
     ry "I feel fine with this life, I've checked my fortune several times and I'll be fine"
-    r "Well then, I mean... you do get decent pay. I'm not surprised hahaha."
+    r "Well then, I mean . . . you do get decent pay. I'm not surprised hahaha."
     ry "Even if I do get rich, I don't want to be greedy like those folks."
     ry "Maybe I can even own my own izakaya."
-    jump .commonroute2
+    jump commonroute2
 
 # Programmer's note: Both choices jump back to the common route label.in [back to normal]
 
 #[back to normal]
-label .commonroute2:
+label commonroute2:
     r "You're gonna serve your yakisoba there?"
     ry "Of course haha."
     ry "Speaking of, do you want some yakisoba?"
@@ -491,8 +493,8 @@ label .commonroute2:
 
     "-Title Card: 30 minutes later-"
     #[Transition to Reimi Room]
-
-# label reimi_room:
+    jump reimi_room
+label reimi_room:
     scene bg room1
     with fade
 
@@ -502,16 +504,16 @@ label .commonroute2:
 
     "Reimi shouted, immediately jumping onto her bed."
 
-    ry "Can you at least take the gas stove out while I prepare the ingredients?"
+    ry "Can you at least take the gas stove out while I prepare the ingredients"
     r "Yeah, give me a minute."
 
-    "Eating yakisoba together is almost tradition at this point. She prepares to cook the noodles while I prepare the other ingredients."
+    "Eating yakisoba together is almost tradition at this point, she prepares to cook the noodles while I prepare the other ingredients."
     "Sliced pork yakisoba is a delight."
-    "After some preparations, I started working on the Yakisoba."
+    "After some preparations I started working on the Yakisoba."
 
     r "It's relaxing to do this sometimes, though I wish we could invite more friends."
     ry "You don't have friends in the arena?"
-    r "I do, but I'm just afraid if they'll disturb these quiet moments, haaaa."
+    r "I do but I'm just afraid if they'll disturb these quiet moments, haaaa."
     ry "I don't mind honestly, the more the merrier."
     r "I thought you were more low-key, you know. You seem to be the type to enjoy a smaller company."
     ry "Well, for one I feel like I need more social interaction."
@@ -519,7 +521,7 @@ label .commonroute2:
     ry "By the way, get two plates, the yakisoba is done."
 
     "Reimi sat on her bed while I sat on the floor leaning against the closet."
-    "These small moments, even if it's just eating a simple meal."
+    "These small moments, even if its just eating a simple meal."
 
     r "Haaaaa, Ryou-chan. Your yakisoba is the best!"
     ry "You don't have to put it that way."
@@ -530,9 +532,9 @@ label .commonroute2:
     scene bg apartment out
     with fade
     "After eating, I decided to clean up and as quickly as I arrived, I walked home alone."
-    "By this point the moon was bright..."
+    "By this point the moon was bright . . ."
     "The walk home was somber, accompanied by the chirping of birds."
-    "Having friends like Reimi keeps me going, even though we live completely different lives..."
+    "Having friends like Reimi keeps me going, even though we live completely different lives . . ."
     "She's really one of the few people who care for me."
     "I opened the door to my house and dropped onto my bed."
     "Before I knew it, I fell asleep."

@@ -33,7 +33,6 @@ define rc = Character("Receptionist")
 define tt = Character("Traitor")
 define rk = Character("Rookie")
 define to = Character("Tram Operator")
-define st = Character("Staff")
 
 # Definition of Flags go here.
 define flag_1 = False
@@ -90,8 +89,7 @@ label start:
     nvl clear
     call day_1
     call day_2
-    
-    return
+    call day_3
 
 # label day_4:
 #     "1. You have nothing to do so you go visit reimi at the sibuya arena"

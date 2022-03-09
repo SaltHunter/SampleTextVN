@@ -1,36 +1,39 @@
-Thu Dec 23 22:27:39 2021
+Sun Feb 20 08:43:15 2022
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.05s
+Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.19s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.07s
+Could not load C:\SampleTextVN/game/gui.rpyc
+Could not load C:\SampleTextVN/game/options.rpyc
+Could not load C:\SampleTextVN/game/screens.rpyc
+Loading script took 1.25s
+Loading save slot metadata. took 0.11s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
-Loading analysis data took 0.02s
+Running init code took 0.17s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\bruce\\AppData\\Roaming/RenPy/backups\\TitleTentative':
-Dump and make backups. took 0.05s
+Backing up script files to 'C:\\Users\\bruce\\AppData\\Roaming/RenPy/backups\\SampleTextVN':
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
+Initial gc. took 0.03s
 DPI scale factor: 1.000000
-Creating interface object took 0.06s
+Creating interface object took 0.08s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.05s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.09s
+Save bytecode. took 0.05s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -40,8 +43,8 @@ swap interval: 1 frames
 Windowed mode.
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Vendor: 'NVIDIA Corporation'
-Renderer: 'GeForce RTX 2060/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 457.20'
+Renderer: 'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 497.29'
 Display Info: None
 Fixed-function is blacklisted.
 Extensions:
@@ -377,6 +380,7 @@ Extensions:
     GL_NV_internalformat_sample_query
     GL_NV_light_max_exponent
     GL_NV_memory_attachment
+    GL_NV_memory_object_sparse
     GL_NV_mesh_shader
     GL_NV_multisample_coverage
     GL_NV_multisample_filter_hint
@@ -420,6 +424,7 @@ Extensions:
     GL_NV_texture_shader
     GL_NV_texture_shader2
     GL_NV_texture_shader3
+    GL_NV_timeline_semaphore
     GL_NV_transform_feedback
     GL_NV_transform_feedback2
     GL_NV_uniform_buffer_unified_memory
@@ -461,11 +466,11 @@ Texture testing:
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 controller: '3412adbe000000000000504944564944' None 0L
-Total time until interface ready: 1.34800004959s
+Total time until interface ready: 2.91499996185s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.009944 seconds.
-- Frame drawn at 0.010945 seconds.
-- Frame drawn at 0.012944 seconds.
-- Frame drawn at 0.020945 seconds.
-- 0.020945 seconds to render 5 frames.
+- Frame drawn at 0.007944 seconds.
+- Frame drawn at 0.011945 seconds.
+- Frame drawn at 0.016944 seconds.
+- Frame drawn at 0.024944 seconds.
+- 0.024944 seconds to render 5 frames.

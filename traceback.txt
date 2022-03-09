@@ -1,52 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 93, in script call
-    call day_3
-  File "game/day3.rpy", line 176, in script
-    isr "I redirected the bullet headed towards Ryohei straight to one of your intercostal space"
-IndexError: list index out of range
+  File "game/script.rpy", line 1347, in script
+    jump choiceamerger
+ScriptError: could not find label 'choiceamerger'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 93, in script call
-    call day_3
-  File "game/day3.rpy", line 176, in script
-    isr "I redirected the bullet headed towards Ryohei straight to one of your intercostal space"
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
-    who(what, *args, **kwargs)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\character.py", line 591, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\display\core.py", line 3130, in interact_core
-    renpy.audio.audio.interact()
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1107, in interact
-    periodic()
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1060, in periodic
-    six.reraise(exc[0], exc[1], exc[2])
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1038, in periodic_thread_main
-    periodic_pass()
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\audio\audio.py", line 979, in periodic_pass
-    c.periodic()
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\audio\audio.py", line 497, in periodic
-    want_pause = self.context.pause or global_pause
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\audio\audio.py", line 306, in get_context
-    mcd = renpy.game.context().music
-  File "C:\Renpy\renpy-7.3.5-sdk\renpy\game.py", line 245, in context
-    return contexts[index]
-IndexError: list index out of range
+  File "game/script.rpy", line 1347, in script
+    jump choiceamerger
+  File "C:\Renpy\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Renpy\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choiceamerger'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TitleTentative 1.0
-Thu Dec 23 10:16:47 2021
+Mon Dec 20 23:28:52 2021
